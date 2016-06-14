@@ -33,6 +33,7 @@
 
 - email: jacobdfriedmann@gmail.com
 - cell: 757-561-3408
+- slack!
 
 --
 
@@ -53,6 +54,15 @@
 
 <img src="img/jacob4.jpg" style="max-height: 500px" />
 ### Jacob as Space Geek
+
+--
+
+## Paul Doulatshahi
+  - [paul.doulatshahi@gmail.com](Paul.Doulatshahi@gmail.com)
+--
+
+## Lauren Jacobson
+  - [lauren.jacobson@generalassemb.ly](lauren.jacobson@generalassemb.ly)
 
 ---
 
@@ -176,7 +186,34 @@ paradigms: Object Oriented Programming and Functional Programming
 
 ### Object Oriented Programming
 
+- Everything is an Object
+- Objects have attributes and methods
 
+--
+
+<img src="img/oop.png" style="max-height: 600px" />
+
+--
+
+<img src="img/scheme.jpg" style="max-height: 200px" />
+
+### Functional Programming
+
+- Everything is a function
+- Mathematical
+
+Note:
+
+- Comes from a type of math called Lambda Calculus, hence the symbol in Scheme's
+logo
+
+--
+
+<img src="img/fp.png" style="max-height: 600px" />
+
+Note:
+
+- To do interesting things, we combine and compose functions
 
 --
 
@@ -198,6 +235,20 @@ Note:
 of JavaScript
 - Rivals, Java for the browser, ActionScript, Flash existed, but fell off and
 never reached the popularity of JavaScript
+
+--
+
+### Awesome Modern JavaScript Uses
+
+#### Traditional Sites
+
+- https://isl.co/
+- http://thestlbrowns.com/
+
+#### Web Applications
+
+- https://www.mapbox.com/studio/
+- https://www.consumerbarometer.com/
 
 ---
 
@@ -276,6 +327,10 @@ The GA Directory is a place for students, alumni and instructors to connect.
 ---
 
 ## What Makes JavaScript Interesting?
+
+--
+
+### It's Powerful
 
 --
 
@@ -441,3 +496,155 @@ Note:
 ### Exercise
 
 #### 0010*1?
+
+- Every number should end at either ✓ or ✗
+- Every circle (state) should have an arrow for 0, 1, and _
+
+--
+
+### Increment a binary number
+
+- 0 => 1
+- 10 (2) => 11 (3)
+- 11 (3) => 100 (4)
+
+--
+
+### Increment a binary number
+
+<img src="img/tminc1.png" style="max-height: 700px" />
+
+--
+
+<img src="img/tminc2.png" style="max-height: 700px" />
+
+--
+
+<img src="img/tminc3.png" style="max-height: 700px" />
+
+--
+
+<img src="img/tminc4.png" style="max-height: 700px" />
+
+--
+
+<img src="img/tminc5.png" style="max-height: 700px" />
+
+--
+
+<img src="img/tminc6.png" style="max-height: 700px" />
+
+--
+
+<img src="img/tminc7.png" style="max-height: 700px" />
+
+--
+
+<img src="img/tminc8.png" style="max-height: 700px" />
+
+--
+
+<img src="img/tminc9.png" style="max-height: 700px" />
+
+--
+
+<img src="img/tminc10.png" style="max-height: 700px" />
+
+--
+
+<img src="img/tminc11.png" style="max-height: 700px" />
+
+--
+
+<img src="img/tminc12.png" style="max-height: 700px" />
+
+--
+
+<img src="img/tminc13.png" style="max-height: 700px" />
+
+--
+
+<img src="img/tminc14.png" style="max-height: 700px" />
+
+--
+
+<img src="img/tminc15.png" style="max-height: 700px" />
+
+--
+
+<img src="img/tminc16.png" style="max-height: 700px" />
+
+--
+
+### A Turing Machine Can Be Programmed to Solve Any Computable Problem
+
+--
+
+### Turing Complete
+
+Note:
+
+- We measure the capabilities of a language in this way: any language that is Turing complete is capable of solving any computable problem
+- We can prove a language is Turing complete by building a Turing Machine simulator
+in that language
+
+--
+
+### [JavaScript is Turing Complete](http://morphett.info/turing/turing.html)
+
+--
+
+### What Else Makes JavaScript Powerful?
+
+--
+
+### High Level of Abstraction
+
+i.e. `4 + 1`
+
+Note:
+
+- In JavaScript it is much easier to write solutions to complicated problems
+- Can you imagine trying to calculate the area under a curve on a Turing Machine?
+
+--
+
+### It's No Longer Limited to the Browser
+
+- Mobile Applications (via React Native, Phonegap, Cordova, etc)
+- Wearables (via Embedded JS Engines)
+- *On your command line/terminal (via Node)*
+
+---
+
+### Overview
+
+| Class | Title |  | Class | Title |
+| --- | :---: | --- |  --- | :---: |
+| Lesson 0 | [Installfest](00-installfest/slides.md) || Lesson 11 | [Advanced APIs](11-advanced-apis/readme.md)|
+| Lesson 1 | [JS on the Command Line](01-command-line-JS/readme.md) || Lesson 12 | [Lab Time](12-in-class-lab/readme.md)|
+| Lesson 2 | [Data Types](02-data-types/readme.md) || **Project 2**  | Feedr - Your Personalized Feed Reader |
+| Lesson 3| [Conditionals and Loops](03-conditionals-and-loops/readme.md) || Lesson 13 | [Prototypical Inheritance](13-prototypical-inheritance/readme.md) |
+| Lesson 4 | [Functions and Scope](04-functions-and-scope/readme.md) || Lesson 14 | [Closures and This](14-closures-and-this/readme.md) |
+| Lesson 5 | [Objects and JSON](05-objects-and-json/readme.md) || Lesson 15 | [Intro to Crud and Firebase](15-intro-to-crud-and-firebase) |
+| Lesson 6 | [**Project 1 Lab**](06-in-class-lab) || Lesson 16 | [Deploying Your App](16-deploying-your-app/readme.md) |
+| Lesson 7 | [Intro to DOM & jQuery](07-intro-to-dom-and-jquery/readme.md)|| Lesson 17 |  [Instructor Student Choice](17-instructor-student-choice/readme.md) |
+| Lesson 8 | [DOM & jQuery Continued](08-dom-and-jquery-continued/readme.md) || Lesson 18 |[Lab Time](18-lab-time/readme.md) |
+| Lesson 9 | [AJAX and APIs](09-ajax-and-apis/readme.md) || **Project 3** | Your Single Page App |
+| Lesson 10| [Asynchronous JS and Callbacks](10-asynchronous-javascript-and-callbacks/readme.md) | |Lesson 19| Final Project Presentations |
+
+--
+
+### [Important Link](https://github.com/ga-students/JS-DC-2)
+
+--
+
+### Expectations & Questions
+
+---
+
+## [Exit Ticket!](http://goo.gl/forms/KzVZ9fuo2YYw5WIB3)
+
+---
+
+# Goodnight :-)
