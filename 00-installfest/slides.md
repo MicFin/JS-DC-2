@@ -109,6 +109,8 @@ computers
 
 <img src="img/cern.jpg" style="max-height: 500px" />
 
+### CERN
+
 --
 
 <img src="img/firstsite.png" style="max-height: 500px" />
@@ -240,7 +242,7 @@ We'll be using Slack to register attendance and communicate during class.
 
 --
 
-### [Instructions](./install.md)
+### [Instructions](https://github.com/ga-students/JS-DC-2/blob/master/00-installfest/install.md)
 
 #### __WARNING:__ Problems getting your environment configured come with the territory.
 
