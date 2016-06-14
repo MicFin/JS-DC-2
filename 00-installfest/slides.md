@@ -29,6 +29,28 @@
 
 --
 
+## Paul
+
+<img src="img/paul.jpg" style="max-height: 500px" />
+
+- [paul.doulatshahi@gmail.com](Paul.Doulatshahi@gmail.com)
+
+--
+
+## Lauren
+
+<img src="img/laurencartoon.png" style="max-height: 500px" />
+
+- [lauren.jacobson@generalassemb.ly](lauren.jacobson@generalassemb.ly)
+
+--
+
+## Real Lauren
+
+<img src="img/lauren.jpg" style="max-height: 500px" />
+
+--
+
 ## Jacob
 
 - email: jacobdfriedmann@gmail.com
@@ -59,10 +81,12 @@
 
 ## Paul Doulatshahi
   - [paul.doulatshahi@gmail.com](Paul.Doulatshahi@gmail.com)
+
 --
 
 ## Lauren Jacobson
   - [lauren.jacobson@generalassemb.ly](lauren.jacobson@generalassemb.ly)
+
 
 ---
 
@@ -617,29 +641,55 @@ Note:
 
 ---
 
-### Overview
-
-| Class | Title |  | Class | Title |
-| --- | :---: | --- |  --- | :---: |
-| Lesson 0 | [Installfest](00-installfest/slides.md) || Lesson 11 | [Advanced APIs](11-advanced-apis/readme.md)|
-| Lesson 1 | [JS on the Command Line](01-command-line-JS/readme.md) || Lesson 12 | [Lab Time](12-in-class-lab/readme.md)|
-| Lesson 2 | [Data Types](02-data-types/readme.md) || **Project 2**  | Feedr - Your Personalized Feed Reader |
-| Lesson 3| [Conditionals and Loops](03-conditionals-and-loops/readme.md) || Lesson 13 | [Prototypical Inheritance](13-prototypical-inheritance/readme.md) |
-| Lesson 4 | [Functions and Scope](04-functions-and-scope/readme.md) || Lesson 14 | [Closures and This](14-closures-and-this/readme.md) |
-| Lesson 5 | [Objects and JSON](05-objects-and-json/readme.md) || Lesson 15 | [Intro to Crud and Firebase](15-intro-to-crud-and-firebase) |
-| Lesson 6 | [**Project 1 Lab**](06-in-class-lab) || Lesson 16 | [Deploying Your App](16-deploying-your-app/readme.md) |
-| Lesson 7 | [Intro to DOM & jQuery](07-intro-to-dom-and-jquery/readme.md)|| Lesson 17 |  [Instructor Student Choice](17-instructor-student-choice/readme.md) |
-| Lesson 8 | [DOM & jQuery Continued](08-dom-and-jquery-continued/readme.md) || Lesson 18 |[Lab Time](18-lab-time/readme.md) |
-| Lesson 9 | [AJAX and APIs](09-ajax-and-apis/readme.md) || **Project 3** | Your Single Page App |
-| Lesson 10| [Asynchronous JS and Callbacks](10-asynchronous-javascript-and-callbacks/readme.md) | |Lesson 19| Final Project Presentations |
+| Class | Title |
+| --- | :---: | ---
+| Lesson 0 | [Installfest](00-installfest/slides.md) |
+| Lesson 1 | [JS on the Command Line](01-command-line-JS/readme.md) |
+| Lesson 2 | [Data Types](02-data-types/readme.md) |
+| Lesson 3 | [Conditionals and Loops](03-conditionals-and-loops/readme.md) |
+| Lesson 4 | [Functions and Scope](04-functions-and-scope/readme.md) |
+| Lesson 5 | [Objects and JSON](05-objects-and-json/readme.md) |
+| Lesson 6 | [**Project 1 Lab**](06-in-class-lab) |
+| Lesson 7 | [Intro to DOM & jQuery](07-intro-to-dom-and-jquery/readme.md)|
+| Lesson 8 | [DOM & jQuery Continued](08-dom-and-jquery-continued/readme.md) |
+| Lesson 9 | [AJAX and APIs](09-ajax-and-apis/readme.md) |
+| Lesson 10| [Asynchronous JS and Callbacks](10-asynchronous-javascript-and-callbacks/readme.md) |
 
 --
+
+| Class | Title |
+|  --- | :---: |
+| Lesson 11 | [Advanced APIs](11-advanced-apis/readme.md)|
+| Lesson 12 | [Lab Time](12-in-class-lab/readme.md) |
+| **Project 2**  | Feedr - Your Personalized Feed Reader |
+| Lesson 13 | [Prototypical Inheritance](13-prototypical-inheritance/readme.md) |
+| Lesson 14 | [Closures and This](14-closures-and-this/readme.md) |
+| Lesson 15 | [Intro to Crud and Firebase](15-intro-to-crud-and-firebase) |
+| Lesson 16 | [Deploying Your App](16-deploying-your-app/readme.md) |
+| Lesson 17 | [Instructor Student Choice](17-instructor-student-choice/readme.md) |
+| Lesson 18 | [Lab Time](18-lab-time/readme.md) |
+| **Project 3** | Your Single Page App |
+| Lesson 19 | Final Project Presentations |
+
+--
+
 
 ### [Important Link](https://github.com/ga-students/JS-DC-2)
 
 --
 
 ### Expectations & Questions
+
+- Miss at most 2 classes
+- Complete 80% of assignments
+
+--
+
+### Office Hours
+
+- Jacob: Mon 6 - 8pm
+- Paul: Tu & Thu 5:30 - 6:30pm
+- Lauren: Su 2 - 4pm
 
 ---
 

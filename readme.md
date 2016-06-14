@@ -14,11 +14,11 @@
   - Paul Doulatshahi
     - [paul.doulatshahi@gmail.com](Paul.Doulatshahi@gmail.com)
     - Office hours:
-      - TBD
+      - Tu & Thu 5:30pm - 6:30pm
   - Lauren Jacobson
     - [lauren.jacobson@generalassemb.ly](lauren.jacobson@generalassemb.ly)
     - Office hours:
-      - TBD
+      - Su 2pm - 4pm
 
 ## Course information
 
