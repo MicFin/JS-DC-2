@@ -167,6 +167,16 @@ Note:
 - Eich was told the language needed to "look like" java
 - His primary inspiration came from a functional, mostly academic language called
 Scheme
+- This led to JavaScript being able to use both of the two primary programming
+paradigms: Object Oriented Programming and Functional Programming
+
+--
+
+<img src="img/java.jpg" style="max-height: 200px" />
+
+### Object Oriented Programming
+
+
 
 --
 
@@ -209,6 +219,25 @@ We'll be using Slack to register attendance and communicate during class.
 
 --
 
+### GA directory
+
+The GA Directory is a place for students, alumni and instructors to connect.
+
+- Find your classmates
+- Reach out to alumni and instructors
+- Hire talent based on skills and experience
+
+[directory.generalassemb.ly](http://directory.generalassemb.ly)
+
+--
+
+### Terminal (Command Line)
+
+- Mac: Open the "Terminal" app (Applications > Utilities > Terminal)
+- Windows: Command Prompt
+
+--
+
 ### Homebrew (brew)
 
 - "Package Manager" (Mac Only)
@@ -233,12 +262,6 @@ We'll be using Slack to register attendance and communicate during class.
 ### Sublime Text
 
 - Text Editor
-
---
-
-### Terminal (Command Line)
-
-* Open the "Terminal" app (Applications > Utilities > Terminal)
 
 --
 
