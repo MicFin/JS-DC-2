@@ -65,9 +65,9 @@ Note:
 
 --
 
-### Terminal === Command Line
+### Terminal === Command Line === Console
 
-Different names for the same thing
+Essentially, different names for the same thing
 
 --
 
@@ -79,7 +79,7 @@ Family of Operating Systems, including all Linux systems and OS X
 
 ### Shell
 
-A generic name for a program that runs inside a terminal
+A generic name for the primary program that runs inside a terminal
 
 --
 
@@ -177,10 +177,10 @@ Fun fact: in 2014, a bug was discovered in BASH that dated back to 1989 called S
 | Command | Description |
 | --- | --- |
 | `subl` | Open sublime text |
-| `pwd`| **P**rint **w**orking **d**irectory |
+| **`pwd`**| **P**rint **w**orking **d**irectory |
 | `say`| Make your computer talk |
 | `open`| Open a file in default application |
-| `man`  | Show the **man**ual for a command |
+| **`man`**  | Show the **man**ual for a command |
 | `cat` | Show the contents of a file |
 | `clear` | Clear the terminal |
 
@@ -287,6 +287,14 @@ GitHub is a web app/platform that:
 ### Fearlessness in making changes
 
 In developing software, we often want to experiment in adding a feature or refactoring (rewriting) existing code. Because git makes it easy to go back to a known good state, we can experiment without worrying that we'll be unable to undo the experimental work.
+
+--
+
+### Git vs. GitHub
+
+**Git** is Version Control Software.
+
+**GitHub** is a website and platform for utilizing git in a collaborative way.
 
 --
 
@@ -467,6 +475,15 @@ Note:
 
 --
 
+### What is it good for?
+
+- Creating a backend server for a web application
+- Running a script to do data analysis (like python)
+- File management
+- Making command line programs (tools, games, etc)
+
+--
+
 ### Ways to run node
 
 1. Interactive command line
@@ -570,6 +587,13 @@ var b = a + 2;
 
 --
 
+### When to use?
+#### Variables
+
+When we need to keep track of something for later use
+
+--
+
 ### Part 2: Let's use variables!
 
 --
@@ -626,6 +650,14 @@ Logging to the console is how we print things out for our own inspection
 ### Inspecting Variables
 
 console.log(y)
+
+--
+
+### When to use?
+#### console.log
+
+- When we are developing a program and need help figuring out what's going on (a.k.a. debugging)
+- When we want to print things to the command line
 
 --
 
