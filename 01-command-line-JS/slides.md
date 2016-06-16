@@ -220,6 +220,18 @@ Fun fact: in 2014, a bug was discovered in BASH that dated back to 1989 called S
 
 --
 
+### Setup Sublime
+
+**For Macs**:
+
+`ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/subl`
+
+**For Windows**:
+
+[http://stackoverflow.com/questions/32282847/opening-sublime-text-from-windows-git-bash](Windows)
+
+--
+
 **Get familiar with the basic commands on the terminal!**
 
 1.  Navigate to your Documents Folder from your Root Directory. ```cd ~``` and then ```cd Documents```
