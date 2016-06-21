@@ -33,6 +33,14 @@
 
 ---
 
+<img src="img/peake.jpg" style="max-height: 500px" />
+
+---
+
+[https://github.com/ga-students/JS-DC-2](https://github.com/ga-students/JS-DC-2)
+
+---
+
 ## Recap: Terminal, Git, Node
 
 --
