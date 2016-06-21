@@ -19,12 +19,13 @@
 | 20 min | Data Types |
 | 5 min  | Break |
 | 30 min | Data Types (Contd) |
+| 20 min | Exercise: Data Types |
 | 10 min | Intro to Arrays |
-| 15 min | Working with Arrays |
-| 25 min | Accessing Values in Arrays |
-| 25 min | Array Helper Methods |
-| 25 min | Iterating through an Array |
-| 25 min | Independent Practice For Arrays |
+| 5 min | Break |
+| 10 min | Working with Arrays |
+| 20 min | Exercise: Array Basics |
+| 20 min | Array Methods |
+| 20 min | Exercise: Decoder |
 | 5 min | Final Questions and Exit Tickets |
 
 ---
@@ -113,7 +114,7 @@ To recap, we have discussed two types of values—or, objects—that store data 
 
 ---
 
-## What is a Data Type? (15 min)
+## What is a Data Type? (10 min)
 
 Let's jump into today's lesson—data types—where we’ll learn the basics of JavaScript and how to exchange data.
 
@@ -135,7 +136,7 @@ We'll now elaborate on Strings, Numbers, Booleans, Null and Undefined now (the o
 
 ---
 
-## Datatypes (15 min)
+## Datatypes (20 min)
 
 For this lesson, we're going to use the terminal and Node to run some basic scripts to understand the types of data we're working with. Open the terminal and type in ```node```.
 
@@ -298,6 +299,30 @@ If a String is on either side of a "+" sign, it will mean concatenation:
 // '2016'
 ```
 
+#### Empty String
+
+A String with no characters in it.
+
+```javascript
+''
+
+'Hello' + '' + '' + '' + ''
+// 'Hello'
+```
+
+#### Case
+
+We can capitalize or lower case Strings if we need to.
+
+```javascript
+'hello'.toUpperCase();
+// HELLO
+
+var a = 'wOrLd';
+a.toLowerCase();
+// world
+```
+
 #### Strings: Used for?
 
 - Names
@@ -311,6 +336,14 @@ var errors = {
   badContainer: "Algolia Places: 'container' must point to an <input> element."
 };
 ```
+
+---
+
+## Break (5 min)
+
+---
+
+## Data Types Continued (30 min)
 
 ### Booleans
 
@@ -419,7 +452,7 @@ a
 ```javascript
 var a = 1;
 a.toString();
-=> // '1'
+// '1'
 
 var b = true;
 
@@ -480,6 +513,13 @@ myNumber = 'Haha sucker';
 myNumber / 10
 // womp womp
 ```
+---
+
+## Exercise: Datatypes (20 min)
+
+<img src="img/distance.png" style="max-height: 250px" />
+
+<img src="img/volume.png" style="max-height: 250px" />
 
 ---
 
@@ -492,173 +532,103 @@ Arrays are great for:
 * Storing data
 * Enumerating data (i.e., using an index to find them)
 * Quickly reordering data
+
 In essence, arrays compose a data structure that is similar in concept to a list. Each item in an array is called an element, and the collection can contain data of the same or different types. In JavaScript, arrays can dynamically grow and shrink in size.
 
 
-  ```javascript
-  var friends = ['Moe', 'Larry', 'Curly'];
-  => ['Moe', 'Larry', 'Curly']
-  ```
+```javascript
+var friends = ['Moe', 'Larry', 'Curly'];
+// ['Moe', 'Larry', 'Curly']
+```
+
+### Indexes
+
+Index is like an address-it's how we find elements in an array.
 
 Items in an array are stored in sequential order; they are indexed starting at `0` and ending at `length - 1`. JavaScript starts counting at zero, so the first position in the array will be `[0]`, the second position in the array will be `[1]`, and so forth.
 
-  ```javascript
-  // First friend
-  var firstFriend = friends[0];
-   => 'Moe'
-  // Get the last friend
-  var lastFriend = friends[2]
-  => 'Curly'
-  ```
+```javascript
+friends[0];
+// 'Moe'
 
-We can even use strings like arrays:
+// First friend
+var firstFriend = friends[0];
+// 'Moe'
 
-  ```javascript
-  var friend = "bobby bottleservice";
-  // pick out first character
-  friend[0]
-  //=> 'b'
-  friend.length
-  ```
+// Get the last friend
+var lastFriend = friends[2]
+// 'Curly'
+```
+
+### Length
+
+The "length" of an Array is the number of elements inside of the Array. It will always be one greater than the last index in the array.
+
+```javascript
+friends.length
+// 3
+
+var lastIndex = friends.length - 1;
+var lastFriend = friends[lastIndex];
+// 'Curly'
+```
+
+We can almost think of a String as an Array of characters:
+
+```javascript
+var friend = "bobby bottleservice";
+// pick out first character
+friend[0]
+//=> 'b'
+friend.length
+```
+
 ---
-<a name="codealong3"></a>
+
+## Break (5min)
+
+---
+
 ## Working with Arrays (15 min)
 
-Using the JavaScript keyword `new` is one way of creating arrays:
-
-#### Part 1: Var New
-
-  ```javascript
-  var a = new Array();
-  => undefined
-
-  a[0] = "dog";
-  => "dog"
-
-  a[1] = "cat";
-  => "cat"
-
-  a[2] = "hen";
-  => "hen"
-
-  a
-  => ["dog", "cat", "hen"]
-
-  a.length;
-  => 3
-  ```
-
-A more convenient notation is to use an array literal:
-
-  ```javascript
-  var a = ["dog", "cat", "hen"];
-
-  a.length;
-  => 3
-  ```
-
-#### Part 2: Length Method
+### Length Method
 
 The `length` method works in an interesting way in Javascript. It is always one more than the highest index in the array.
 
 So `array.length` isn't necessarily the number of items in the array. Consider the following:
 
-  ```javascript
-  var a = ["dog", "cat", "hen"];
-  a[100] = "fox";
-  a.length;
-  => 101
-  ```
+```javascript
+var a = ["dog", "cat", "hen"];
+a[100] = "fox";
+a.length;
+=> 101
+```
 
 **Remember**: the length of the array is one more than the highest index.
 
-#### Part 3: Getting Data from an Array
+### Getting Data from an Array
 
 If you query a nonexistent array index, the result will be `undefined`:
 
-  ```javascript
-  var a = ["dog", "cat", "hen"];
-  => undefined
-
-  typeof a[90];
-  => undefined
-  ```
----
-<a name="codealong4"></a>
-## Accessing Values in Arrays (25 min)
-
-In this exercise, students will obtain and set array indices, as well as continue practicing with string concatenation. They will be populating two arrays: one with strings, one with numbers. Students will then return these strings and numbers from the arrays in order to create sentences.
-
-#### Part 1: Creating Arrays Using the `new` Keyword and the Array Literal
-
-Create two arrays: one using the `new` keyword; the other using an array literal.
-
-* The first array will contain __String__ data values, representing goods a student consumes.
-* The second array will contain __Number__ data values, representing the quantity of the respective good they consume on a daily basis.
-
-First array (using `new` keyword)
-
-  ```javascript
-  var goods = new Array("water", "coffee")
-  ```
-
-  Second array (array literal)
-  ```javascript
-  var quantity = [8, 2]
-  ```
-
-Note: Explain to the students the differences in array creation (new keyword vs. array literal):
-
 ```javascript
-    var a = [];        // these are the same
-    b = new Array();   // a and b are arrays with length 0
+var a = ["dog", "cat", "hen"];
+// undefined
 
-    c = ['foo', 'bar'];           // these are the same
-    d = new Array('foo', 'bar');  // c and d are arrays with 2 strings
-
-    // these are different:
-    e = [3];           // e.length == 1, e[0] == 3
-    f = new Array(3);  // f.length == 3, f[0] == undefined
-    b = new Array();   // a and b are arrays with length 0
-
-    c = ['foo', 'bar'],           // these are the same
-    d = new Array('foo', 'bar'),  // c and d are arrays with 2 strings
-
-    ```
-
-* Citation: [StackOverflow](http://stackoverflow.com/questions/1094723/what-is-array-literal-notation-in-javascript-and-when-should-you-use-it)
-
-
-#### Part 2: Adding Elements to the Arrays
-
-Use bracket notation to add values to the one of the arrays; use the `.push()` method for the other.
-
-```javascript
-goods[2] = "beer"
-
-quantity.push(8)
-```
-
->Note: Explain to the students the differences in adding (or setting) array values. What are the pros/cons of each approach?
-
-#### Part 3: Accessing Elements from Arrays and Concatenating Them With Strings
-
-Now it's time to access various combinations of the two arrays’ elements and concatenate their returned values.
-
-```javascript
-  => 'Today, I consumed ' + quantity[0] + ' cups of ' + goods[0]
-  => 'I am going to have ' + quantity[1] + ' cups of ' + goods[1] + ' tonight'
+typeof a[90];
+// undefined
 ```
 
 ---
-<a name="codealong5"></a>
-## Array Helper Methods (25 min)
+
+## Exercise: Array Basics (20 min)
+
+---
+
+## Array Methods (25 min)
 
 Arrays come with a number of methods. Here's a list of some popular helpers:
 
 > Note: You might want to demonstrate a few of these.
-
-- `a.toString()` - Returns a string with the `toString()` of each element separated by commas.
 
 - `a.pop()` - Removes and returns the last item.
 
@@ -666,241 +636,56 @@ Arrays come with a number of methods. Here's a list of some popular helpers:
 
 - `a.reverse()` - Reverses the array.
 
-- `a.shift()` - Removes and returns the first item.
-
-- `a.unshift([item])` - Prepends items to the start of the array.
+- `a.join()` - Concatenates elements in a array together into a string
 
 You will likely not remember _every_ method. Explore the [full documentation for array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) and other helper methods provided for particular objects.
 
-
 In this exercise, students will utilize their knowledge of array helper methods in order to decode a secret message.
 
-#### Part 1: Array Creation and the `.push()` Method
+### `a.pop()`
 
 ```javascript
-var message = []
+var planets = ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Pluto'];
 
-message.push(8)
-=> 1
-message.push('r', 'e', 'b', 'm', 'u')
-=> 6
-message.push('n', 's', 'i', 'A', 'G', 'K')
-=> 12
+planets.pop();
 
-message
-=> [ 8, 'r', 'e', 'b', 'm', 'u', 'n', 's', 'i', 'A', 'G', 'K' ]
-
+planets
+// ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus']
 ```
 
-#### Part 2: `.pop()`, `.shift()`, and `.unshift()`
+### `a.push()`
 
 ```javascript
-message.pop()
-=> 'K'
+planets.push('Planet 9');
 
-message.shift()
-=> 8
-
-message.unshift(1)
-=> 11
+planets
+// ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Planet 9']
 ```
 
-#### Part 3: Array Reversal Using `.reverse()`
-```javascript
-message.reverse()
-=> [ 'G', 'A', 'i', 's', 'n', 'u', 'm', 'b', 'e', 'r', 1 ]
-```
-
-> Note: Discuss how the `.reverse()` method mutates the array structure.
-
-#### Part 4: Array `.join()`
-
-The `.join()` method joins all elements of an array into a single string.
-
-Citation: [Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join)
-
-__Note:__ The `.join()` method accepts an optional argument, __the separator__, which becomes a string that separates the array values. If no argument is supplied to `.join()`, the separator defaults to a comma.
+### `a.reverse()`
 
 ```javascript
-message.join()
-=> 'G,A,i,s,n,u,m,b,e,r,1'
+var name = ['b', 'o', 'c', 'a', 'J'];
 
-message.join(' ')
-=> 'G A i s n u m b e r 1'
-
+name.reverse();
+// ['J', 'a', 'c', 'o', 'b']
 ```
----
-<a name="codealong6"></a>
-## Iterating through an Array (25 min)
 
-Iterating through the elements of an array, one at a time, is a very common and useful practice in programming.
-
-We can use a `for` loop to iterate over the elements of an array like this:
+### `a.join()`
 
 ```javascript
-var teams = ['Bruins', 'Cal Bears', 'Ravens', 'Ducks'];
-for (var i = 0; i < teams.length; i++) {
-	console.log(teams[i]);
-}
+name.join();
+// 'J,a,c,o,b'
+
+name.join('');
+// 'Jacob'
 ```
-
-How is the following code different from the one above?
-```javascript
-var teams = ['Bruins', 'Cal Bears', 'Ravens', 'Ducks'];
-for (var i = 2; i < teams.length; i++) {
-	console.log(teams[i]);
-}
-```
-
-JavaScript arrays have several advanced _iterator methods_.
-
-Many of these methods require a function to be supplied as an argument, and the code in which you write the function will be applied to _each_ item in the array, individually.
-
-For example, we can use the `forEach` method instead of a `for` loop to iterate the elements:
-
-```javascript
-var teams = ['Bruins', 'Cal Bears', 'Ravens', 'Ducks'];
-teams.forEach(function(el) {
-    console.log(el);
-});
-```
-
-This function would return:
-
-```javascript
-Bruins
-Cal Bears
-Ravens
-Ducks
-undefined
-```
-
-Do you notice how much clearer this syntax is than that of the `for` loop?
-
-Here are some other iterator methods for you to research and practice with:
-
-- `Array.every()`
-- `Array.some()`
-- `Array.filter()`
-- `Array.map()`
-
-
-#### Part 1: Evens and Odds
-
-Create an array--`evens`--and populate it with the even numbers 2 - 10. Create an array--`odds`--and populate it with the odd numbers 1 - 9.
-
-```javascript
-var evens = []
-evens.push(2,4,6,8,10)
-=> 5
-
-var odds = []
-odds.push(1,3,5,7,9)
-=> 5
-```
-
-#### Part 2: `Array.every( )`
-
-The `.every()` method tests whether all elements in the array pass the test implemented by the provided function. [[Source](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every)]
-
-```javascript
-evens.every(function (num) {
-  return num % 2 === 0
-})
-
-=> true
-
-evens.every(function (num) {
-  return num % 4 === 0
-})
-
-=> false
-```
-
-#### Part 3: `Array.some( )`
-
-The `.some()` method tests whether an element in the array passes the test implemented by the provided function. [[Source](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some)]
-
-```javascript
-evens.some(function (num) {
-  return num % 4 === 0
-})
-
-=> true
-```
-
-#### Part 4: `Array.filter( )`
-
-The `.filter()` method creates a new array with all elements that pass the test implemented by the provided function.
-[[Source](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)]
-
-__Note:__ `.filter()` does not mutate the array it is acting upon; while it does return a new array of filtered elements, this new array must be assigned to a new variable or returned to another function.
-
-```javascript
-evens.filter(function (num) {
-  return num > 5
-})
-=> [6, 8, 10]
-
-evens
-=>[ 2, 4, 6, 8, 10 ]
-
-var bigNums = evens.filter(function (num) {
-  return num > 5
-})
-=> undefined
-
-bigNums
-=> [6, 8, 10]
-
-var smallNums = odds.filter(function (num) {
-  return num < 5
-})
-=> undefined
-smallNums
-=> [1, 3]
-```
-
-#### Part 5: ‘Array.map( )’
-
-The `.map()` method creates a new array with the results of calling a provided function on every element in this array.
-[[Source](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)]
-
-__Note:__ `.map()` does not mutate the array it is acting upon; while it does return a new array of filtered elements, this new array must be assigned to a new variable or returned to another function.
-
-```javascript
-var timesFive = evens.map(function (num) {
-  return num * 5
-})
-=> undefined
-
-timesFive
-=> [10, 20, 30, 40, 50]
-
-var timesTen = odds.map(function (num) {
-  return num * 10
-})
-=> undefined
-
-timesTen
-=> [10, 30, 50, 70, 90]
-```
----
-<a name="lab1"></a>
-## Arrays: Independent Practice
-
-In the [starter code](starter-code/arrays.js), you'll find an array.js file. Use this to get some more practice in the console with arrays.
 
 ---
-<a name="lab2"></a>
-## Homework: Madlibs (10 min)
 
-> **Note:** The Mad Libs homework exercise requires more advanced techniques, such as functions and DOM manipulation. In this class, you should walk students through the starter code and explain the goals of the exercise **but let them know that they will not yet have the skills to complete it**. The due date for the exercise should be set for some point after Lesson 6 (Intro to the DOM and jQuery). The idea is to give students a preview of what the first assignment will entail. If students would like to read about and practice more advanced topics before lesson 6, they should feel free to do so. [Instructions for students](starter-code/madlib-with-loops/instructions.md) are provided along with the starter code.
-
-For this assignment, you'll create your own Startup Generator app. Open the files in the [madlib with loops folder](starter-code/madlib-with-loops) and start by reading the "instructions.md" file. You'll learn how to use helper methods and for loops. We have provided some starter code; while we haven't covered functions and DOM manipulation yet, this is a good chance for you to challenge yourself and get a head start on these topics.
+## Exercise: Decoder (20 min)
 
 ---
-<a name="conclusion"></a>
 
 ## Conclusion (5 min)
 

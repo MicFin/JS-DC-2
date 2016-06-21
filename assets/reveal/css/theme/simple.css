@@ -151,9 +151,12 @@ body {
   box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3); }
 
 .reveal code {
-  font-family: monospace; }
+  font-family: monospace;
+}
 
 .reveal pre code {
+    line-height: 1.2em;
+    font-size: 1.7em;
   display: block;
   padding: 5px;
   overflow: auto;
