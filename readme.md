@@ -55,3 +55,29 @@ C. [Class Pass](./assets/class-pass.png) printed out or on your phone
 | Lesson 8 | [DOM & jQuery Continued](08-dom-and-jquery-continued/readme.md) || Lesson 18 |[Lab Time](18-lab-time/readme.md) |
 | Lesson 9 | [AJAX and APIs](09-ajax-and-apis/readme.md) || **Project 3** | Your Single Page App |
 | Lesson 10| [Asynchronous JS and Callbacks](10-asynchronous-javascript-and-callbacks/readme.md) | |Lesson 19| Final Project Presentations |
+
+## Classes
+
+### Class 00: Installfest
+
+- [Slides](http://ga-students.github.io/00-installfest/)
+- [Video](https://www.youtube.com/watch?v=ALbl5N3sH18)
+
+--
+
+### Class 01: Command Line JS
+
+- [Slides](http://ga-students.github.io/01-command-line-JS/)
+- [Video](https://www.youtube.com/watch?v=Vad9oN4t_wY)
+- [Assignment](01-command-line-JS/assignment.md)
+
+--
+
+### Class 02: Data Types
+
+- [Slides](http://ga-students.github.io/02-data-types/)
+- [Video](http://www.youtube.com/watch?v=D4Ns5dvaO-Y)
+
+--
+
+## FAQ

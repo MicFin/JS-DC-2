@@ -52,6 +52,16 @@ tail -n100 access_log | grep "/customer/" | grep "1\" 302" | awk '{print $7}' | 
 
 --
 
+#### `cp` command
+
+Copy files or directories
+
+```bash
+cp <source file> <destination>
+```
+
+--
+
 ### Git
 
 --
@@ -230,7 +240,9 @@ Math.sqrt(4)
 // 2
 ```
 
-* Need a `random` number? Then use `Math.random`.
+--
+
+##### `Math.random`
 
 ```javascript
 // The following only returns a random decimal
@@ -238,11 +250,17 @@ Math.random()
 // 0.229375290430
 ```
 
+--
+
+##### `Math.random`
+
 How might we get a number between 0 and 10?
 
 When could random numbers be useful?
 
-* Since Numbers can be **Floats** or **Integers**, we often need to delete remaining decimal places, which can be done using `Math.floor`. We can round up using `Math.ceil`.
+--
+
+##### Rounding
 
 ```javascript
 // Remove the decimal
@@ -252,11 +270,15 @@ Math.floor(3.9999)
 // 3
 ```
 
+--
+
 #### Numbers: Used for?
 
 - Scores
 - Age
 - Currency
+
+--
 
 From d3 open source project, for calculating force during a collision:
 ```javascript
@@ -280,15 +302,37 @@ if (data) {
 }
 ```
 
+--
+
 ### Strings
 
-We use textual data a lot in applications, called "Strings". Strings are collections of letters and symbols known as *characters*. We use them to deal with words and text in JavaScript. Strings are just another type of **value** in Javascript.
+Textual Data
+
+--
+
+### Strings
+
+Use either single or double quotes
 
 ```javascript
 "John"
 'Jane'
 "123"
 ```
+
+--
+
+### Strings
+
+Made up of characters.
+
+```javascript
+'Hello World!'
+```
+
+How many characters are in this String?
+
+--
 
 #### Concatenation
 
@@ -299,9 +343,13 @@ into a larger String.
 'Hello ' + 'World'
 // 'Hello World'
 
-'Jacob ' + 'D ' +'Friedmann'
-// 'Hello World'
+'DC ' + 'JS ' +'2'
+// 'DC JS 2'
 ```
+
+--
+
+#### Concatenation
 
 ```javascript
 var firstName = 'Jacob';
@@ -310,15 +358,24 @@ var lastName = 'Friedmann';
 var fullName = firstName + ' ' + lastName;
 ```
 
+--
+
+#### Concatenation
+
 If a String is on either side of a "+" sign, it will mean concatenation:
 
 ```javascript
 'I have ' + 10 + ' cats.'
 // 'I have 10 cats.'
 
+20 + 16
+// 36
+
 20 + '16'
 // '2016'
 ```
+
+--
 
 #### Empty String
 
@@ -330,6 +387,8 @@ A String with no characters in it.
 'Hello' + '' + '' + '' + ''
 // 'Hello'
 ```
+
+--
 
 #### Case
 
@@ -344,11 +403,15 @@ a.toLowerCase();
 // world
 ```
 
+--
+
 #### Strings: Used for?
 
 - Names
 - Content: blog posts, comments, etc
 - User input
+
+--
 
 from places.js open source project, error messages
 ```javascript
@@ -360,32 +423,43 @@ var errors = {
 
 ---
 
-## Break (5 min)
+## Break
 
 ---
 
-## Data Types Continued (30 min)
+## Data Types Continued
+
+--
 
 ### Booleans
 
 `true` and `false`
 
-Names after George Boole, creator of "boolean algebra", the root of formal logic.
+Note:
+
+- Named after George Boole, creator of "boolean algebra", the root of formal logic.
+
+--
 
 #### Negation operator
 
 `!` in front of a boolean value will negate it (make it opposite).
-
-Read as "not".
 
 ```javascript
 !true
 // false
 ```
 
+Note:
+Read as "not".
+
+--
+
 #### Logical Operators
 
-- `&&` (and) operator
+--
+
+##### `&&` (and) Operator
 
 Both sides must be true
 
@@ -397,7 +471,9 @@ true && false
 // false
 ```
 
-- `||` (or) operator
+--
+
+##### `||` (or) operator
 
 One side must be true
 
@@ -409,6 +485,10 @@ false || false
 // false
 ```
 
+--
+
+##### Logical Operators
+
 We can chain operators
 
 ```javascript
@@ -419,18 +499,47 @@ false || false || false || true
 // true
 ```
 
-- Today is Tuesday && We are in class
-  - true
-- Today is Tuesday && !The year is 2020
-  - true
-- !Today is Tuesday || (The year is 2016 && It is morning)
-  - false
+--
+
+### Today is Tuesday && We are in class
+
+--
+
+### Today is Tuesday && We are in class
+### true && true
+### true
+
+--
+
+### Today is Tuesday && !The year is 2020
+
+--
+
+### Today is Tuesday && !The year is 2020
+### true && !false
+### true && true
+### true
+
+--
+
+### !Today is Tuesday || (The year is 2016 && It is morning)
+
+--
+
+### !Today is Tuesday || (The year is 2016 && It is morning)
+### !true || (true && false)
+### false || false
+### false
+
+--
 
 #### Booleans: Used for?
 
 - on or off
 - is the answer right or wrong?
 - settings (enabled or disabled)
+
+--
 
 from AlgorithmVisualizer open source library, defining settings:
 ```javascript
@@ -440,6 +549,8 @@ editor.setOptions({
   enableLiveAutocompletion: true
 });
 ```
+
+--
 
 ### Undefined
 
@@ -451,6 +562,10 @@ var a;
 a
 // undefined
 ```
+
+--
+
+### Undefined
 
 We can also assign a value of undefined.
 
@@ -466,9 +581,11 @@ a
 // undefined
 ```
 
+--
+
 ### Type Conversion
 
-* If you want to turn a number or boolean into a string, you can use a helpful method called `toString`.
+Number to String
 
 ```javascript
 var a = 1;
@@ -481,7 +598,11 @@ b.toString();
 // 'true'
 ```
 
-* `parseFloat` and `parseInt` can convert a String into a number
+--
+
+### Type Conversion
+
+String to Number
 
 ```javascript
 parseInt('42');
@@ -491,13 +612,17 @@ parseFloat('3.1415');
 // 3.1415
 ```
 
+--
+
 #### When will this be useful?
 
 User input is usually in the form of a String, so if we want a numerical value we'll need to convert it.
 
+--
+
 ### `typeof( )`
 
-We don’t yet know what type of data we're working with, so let’s ask the computer. To do this, we can use [`typeof()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof). Let's try it out in the terminal with the following:
+See what Data Type a value is.
 
 ```javascript
 typeof(37);
@@ -513,17 +638,27 @@ typeof('hello world');
 // 'string'
 ```
 
-`typeof()` returns a string with the type of the operand, or expression of the object you're looking at.
+--
+
+### `typeof( )`
 
 What is `typeof(typeof(3))`?
 
+--
+
 #### When will this be useful?
 
-If I were to show you the variable `d`, could you tell me what type that variable is? `typeof` can assist
-when we don't know the type of a variable when we're writing the code.
+--
 
-JavaScript doesn't mandate that a variable stay the same type. This can be confusing, especially when there are
-many developers working on the same thing.
+#### What type is this variable?
+
+```javascript
+a
+```
+
+--
+
+`typeof` can assist when we don't know the type of a variable when we're writing the code.
 
 ```javascript
 
@@ -534,9 +669,14 @@ myNumber = 'Haha sucker';
 myNumber / 10
 // womp womp
 ```
+
+Note:
+
+JavaScript doesn't mandate that a variable stay the same type. This can be confusing, especially when there are many developers working on the same thing.
+
 ---
 
-## Exercise: Datatypes (20 min)
+## Exercise: Datatypes
 
 <img src="img/distance.png" style="max-height: 250px" />
 
@@ -544,34 +684,50 @@ myNumber / 10
 
 ---
 
-## Introduction to Arrays (10 min)
+## Introduction to Arrays
 
-You will find that strings and numbers are often not enough for most programming purposes. What is needed are collections of data that we can use efficiently. These are called Arrays.
+--
 
-Arrays are great for:
+### Array
 
-* Storing data
-* Enumerating data (i.e., using an index to find them)
-* Quickly reordering data
+A list of values.
 
-In essence, arrays compose a data structure that is similar in concept to a list. Each item in an array is called an element, and the collection can contain data of the same or different types. In JavaScript, arrays can dynamically grow and shrink in size.
+--
 
+### Array
 
 ```javascript
 var friends = ['Moe', 'Larry', 'Curly'];
 // ['Moe', 'Larry', 'Curly']
 ```
 
-### Indexes
+--
 
-Index is like an address-it's how we find elements in an array.
+### Index
 
-Items in an array are stored in sequential order; they are indexed starting at `0` and ending at `length - 1`. JavaScript starts counting at zero, so the first position in the array will be `[0]`, the second position in the array will be `[1]`, and so forth.
+<img src="img/array_index_diagram.png" style="max-height: 500px" />
+
+--
+
+### Index
+
+An Index is like an address-it's how we find elements in an array
+
 
 ```javascript
+var friends = ['Moe', 'Larry', 'Curly'];
+
 friends[0];
 // 'Moe'
+```
 
+--
+
+### Index
+
+Indices start at zero
+
+```javascript
 // First friend
 var firstFriend = friends[0];
 // 'Moe'
@@ -581,51 +737,60 @@ var lastFriend = friends[2]
 // 'Curly'
 ```
 
+--
+
 ### Length
 
-The "length" of an Array is the number of elements inside of the Array. It will always be one greater than the last index in the array.
+The "length" of an Array is the number of elements inside of the Array.
 
 ```javascript
 friends.length
 // 3
+```
 
+--
+
+### Length
+
+It will always be one greater than the last index in the array.
+
+```javascript
 var lastIndex = friends.length - 1;
 var lastFriend = friends[lastIndex];
 // 'Curly'
 ```
 
-We can almost think of a String as an Array of characters:
+---
 
-```javascript
-var friend = "bobby bottleservice";
-// pick out first character
-friend[0]
-//=> 'b'
-friend.length
-```
+## Break
 
 ---
 
-## Break (5min)
+## Working with Arrays
 
----
+--
 
-## Working with Arrays (15 min)
-
-### Length Method
-
-The `length` method works in an interesting way in Javascript. It is always one more than the highest index in the array.
-
-So `array.length` isn't necessarily the number of items in the array. Consider the following:
+### Inserting values into an Array
 
 ```javascript
 var a = ["dog", "cat", "hen"];
-a[100] = "fox";
-a.length;
-=> 101
+a[2] = "fox";
+// ["dog", "cat", "fox"]
 ```
 
+--
+
+### Inserting values into an Array
+
+```javascript
+a[100] = "fox";
+```
+
+Note:
+
 **Remember**: the length of the array is one more than the highest index.
+
+--
 
 ### Getting Data from an Array
 
@@ -635,21 +800,27 @@ If you query a nonexistent array index, the result will be `undefined`:
 var a = ["dog", "cat", "hen"];
 // undefined
 
-typeof a[90];
-// undefined
+a[1];
+// "cat"
+```
+
+--
+
+### Getting Data from an Array
+
+```javascript
+a[90];
 ```
 
 ---
 
-## Exercise: Array Basics (20 min)
+## Exercise: Array Basics
 
 ---
 
-## Array Methods (25 min)
+## Array Methods
 
-Arrays come with a number of methods. Here's a list of some popular helpers:
-
-> Note: You might want to demonstrate a few of these.
+Arrays come with a number of methods to help us work with them:
 
 - `a.pop()` - Removes and returns the last item.
 
@@ -659,9 +830,10 @@ Arrays come with a number of methods. Here's a list of some popular helpers:
 
 - `a.join()` - Concatenates elements in a array together into a string
 
+Note:
 You will likely not remember _every_ method. Explore the [full documentation for array methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) and other helper methods provided for particular objects.
 
-In this exercise, students will utilize their knowledge of array helper methods in order to decode a secret message.
+--
 
 ### `a.pop()`
 
@@ -674,6 +846,8 @@ planets
 // ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus']
 ```
 
+--
+
 ### `a.push()`
 
 ```javascript
@@ -683,6 +857,8 @@ planets
 // ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Planet 9']
 ```
 
+--
+
 ### `a.reverse()`
 
 ```javascript
@@ -691,6 +867,8 @@ var name = ['b', 'o', 'c', 'a', 'J'];
 name.reverse();
 // ['J', 'a', 'c', 'o', 'b']
 ```
+
+--
 
 ### `a.join()`
 
@@ -704,19 +882,12 @@ name.join('');
 
 ---
 
-## Exercise: Decoder (20 min)
+## Exercise: Decoder
 
 ---
 
-## Conclusion (5 min)
+## [Exit Ticket! (Class 3)](http://goo.gl/forms/KzVZ9fuo2YYw5WIB3)
 
-#### Review
+---
 
-Make sure the lesson objectives have been met.
-
-* Describe use cases of different "data types".
-* Why is iterating important when working with stored data?
-
-#### Further Resources
-
-* Feel free to read more from [Mozilla](https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript) about JavaScript fundamentals.
+# Goodnight :-)
