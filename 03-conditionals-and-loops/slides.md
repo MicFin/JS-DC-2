@@ -17,6 +17,11 @@
 | 10 min | Intro to Control Flow |
 | 15 min | Conditional Statements |
 | 20 min | Exercise: Conditionals |
+
+--
+
+| Timing | Topic |
+| --- | --- |
 | 15 min | Truthiness |
 | 10 min | Recap: Arrays |
 | 25 min | Exercise: Arrays |
@@ -37,13 +42,13 @@ Note:
 
 ## Recap: Data Types
 
-| Data Type | Description | Example |
+| Data Type | Description |
 | --- | --- | --- |
-| **Strings** | Single words or sentences surrounded by double or single quotes | `"lots of kittens"`, `'lots of kittens'` |
-| **Numbers** | Whole numbers, decimals | `42`, `3.14`, `3.0` |
-| **Booleans** | Represents either true or false | `true`, `false` |
-| **Undefined** | Variable that has yet to assigned | `undefined` |
-| **Arrays** | Collections of Data | `[ 'Superman', 'Batman', 'Spider-Man' ]` |
+| **Strings** | Single words or sentences surrounded by double or single quotes |
+| **Numbers** | Whole numbers, decimals |
+| **Booleans** | Represents either true or false |
+| **Undefined** | Variable that has yet to assigned |
+| **Arrays** | Collections of Data |
 
 - What are the potential values?
 - What operations can be done?
@@ -191,8 +196,6 @@ true === true;
 
 #### != and !==
 
-There are also `!=` and `!==` operators, which are the negative versions of `==` and `===`. And again, we should always use `!==` and `===`, because they are more precise than `!=` and `==`.
-
 ```javascript
 "hello" !== "world"
 // true
@@ -203,6 +206,10 @@ There are also `!=` and `!==` operators, which are the negative versions of `==`
 4 !== '4'
 // true
 ```
+
+Note:
+
+There are also `!=` and `!==` operators, which are the negative versions of `==` and `===`. And again, we should always use `!==` and `===`, because they are more precise than `!=` and `==`.
 
 ---
 
@@ -229,6 +236,21 @@ All of the JavaScript we've looked at so far is executed sequentially, line by l
 - Switch Statements
 - Exception Handling
 - Async
+
+--
+
+### Code blocks
+
+```javascript
+{
+    // code here
+}
+```
+
+Note:
+
+Control flow structures typically use curly braces to group lines of code, we calls
+these "blocks"
 
 ---
 
@@ -321,6 +343,7 @@ if (EXPRESSION) {
 
 ```javascript
 var name = "kittens";
+
 if (name === "puppies") {
   console.log('woof');
 } else if (name === "kittens") {
@@ -360,29 +383,16 @@ var VARIABLE = EXPRESSION ? VALUE IF TRUE : VALUE IF FALSE;
 ### Ternary
 
 ```javascript
-var age = 12;
-//=> undefined
-
 var allowed = (age > 18) ? "yes" : "no";
 //=> undefined
-
-allowed
-//=> "no"
 ```
 
 ```javascript
-var age = 12;
-//=> undefined
-
-var allowed;
 if (age > 18) {
   allowed = "yes";
 } else {
   allowed = "no";
 }
-
-allowed
-//=> "no"
 ```
 
 --
@@ -408,8 +418,8 @@ var value = (typeof(props.value) === 'undefined') ? props.defaultValue : props.v
 
 ### Truthy and Falsey
 
-- "truthy" values are those that behave like `true` when used in a conditional
-- "falsey" values are those that bahave like `false` when used in a conditional
+- "**truthy**" values are those that behave like `true` when used in a conditional
+- "**falsey**" values are those that bahave like `false` when used in a conditional
 
 --
 
@@ -554,6 +564,8 @@ Arrays come with a number of methods to help us work with them:
 
 ## Loops
 
+Repeat, repeat!
+
 Note:
 
 Looping is a way of repeating a task. We use loops to perform repetitive behavior in our code without repeating ourselves. Often, loops, especially `for` loops are used to operate on each element in an Array.
@@ -610,6 +622,10 @@ if (grades[0] >= 90) {
 
 This will take a long time to type if we do it one by one. Instead, we can use a loop.
 
+--
+
+### For loop for iteration
+
 ```javascript
 var grades = [87, 95.5, 40, 79, 20];
 
@@ -622,6 +638,8 @@ for (var i = 0; i < grades.length; i++) {
   ...
 }
 ```
+
+--
 
 ### For Loop: How is it used?
 
@@ -640,7 +658,9 @@ for (let i = 0; i < self.config.disable.length; i++){
 }
 ```
 
-### While loop
+--
+
+### While Loop
 
 `While` is a loop statement that will run **while** a condition is true.
 
@@ -652,6 +672,10 @@ while (x > 0) {
 	x--;
 }
 ```
+
+--
+
+### While Loop
 
 Any `for` loop can be written as a while loop:
 
@@ -671,7 +695,7 @@ while (i <= 4) {
 }
 ```
 
-### Infinite Loop
+--
 
 ```javascript
 var i = 0;
@@ -680,6 +704,12 @@ while (i <= 4) {
 	// i++;
 }
 ```
+
+Note:
+
+Infinite Loop
+
+--
 
 ### While loop: How is it used?
 
@@ -697,118 +727,40 @@ while (i < l) {
 
 ---
 
-## [Exercise: Loops](starter-code/fizzbuzz.js) (30 min)
+## [Exercise: Loops](starter-code/fizzbuzz.js)
 
-Relying on your new-found knowledge of loops and if/else statements, incrementally build the common Fizz buzz loop. Fizz buzz is a math game designed to teach the concept of division. Create a program that will iterate through numbers 1 to 101 and log each number in the console.
-
->Hint: Read about [the Remainder Operator on MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators) and figure out how to use it to simplify this problem.
-
-Open the [fizzbuzz.js](starter-code/fizzbuzz.js) to get started.
-
-> Note: Guide students with solutions below as they complete each step.
-
-##### Step 1:
-
-Construct a for loop that iterates through, and `console.log()`'s out, numbers 1 - 100:
-
-```javascript
-for (var num = 1; num <= 100; num++) {
-  console.log(num);
-}
-```
-
-##### Step 2:
-
-Add an if/else statement that logs the string `"fizz"` if the value being iterated over is divisible by `3`; otherwise, log out the value:
-
-```javascript
-for (var num = 1; num <= 100; num++) {
-  if (num % 3 === 0) {
-    console.log('fizz');
-  } else {
-    console.log(num)
-  }
-}
-```
-
-##### Step 3:
-
-Add an `else if` clause that logs the string `"buzz"` if the value being iterated over is divisible by `5`:
-
-```javascript
-for (var num = 1; num <= 100; num++) {
-  if (num % 3 === 0) {
-    console.log('fizz');
-  } else if (num % 5 === 0) {
-    console.log('buzz')
-  } else {
-    console.log(num)
-  }
-}
-```
-
-##### Step 4:
-
-Add an additional `else if` clause that logs the string `"fizzbuzz"` if the value being iterated over is divisible by both `3` and `5`. __Note:__ this step is intentionally broken! Place the new `else if` __below__ the evaluations for `fizz` and `buzz`; after running the code, and experiencing the undesired results, prompt the students as to why the `fizzbuzz` evaluation never occurred.
-
-```javascript
-for (var num = 1; num <= 100; num++) {
-  if (num % 3 === 0) {
-    console.log('fizz');
-  } else if (num % 5 === 0) {
-    console.log('buzz')
-  } else if (num % 15 === 0) {
-    console.log('fizzbuzz')
-  } else {
-    console.log(num)
-  }
-}
-```
-
-##### Step 5:
-
-Fix the above code to evaluate the `fizzbuzz` condition:
-
-```javascript
-for (var num = 1; num <= 100; num++) {
-  if (num % 15 === 0) {
-    console.log('fizzbuzz');
-  } else if (num % 5 === 0) {
-    console.log('buzz')
-  } else if (num % 3 === 0) {
-    console.log('fizz')
-  } else {
-    console.log(num)
-  }
-}
-```
-
-<a name="conclusion"></a>
-## Conclusion (5 min)
-
-These are some of the foundational tools you’ll use in many of your applications. You might need to study the exact syntax before it’s committed to your memory, but it's important that you remember these core "control flow" concepts, because every programming language you encounter will involve them.
-
-## Review
-
-Make sure the lesson objectives have been met.
-
-* Be able to explain if/else and switch statements as well as use cases.
-* Differentiate between true, false, 'truthy', and 'falsey'.
+---
 
 ## Assignment 2
 
-* **99 Bottles of Beer** (bottles.js)
+--
+
+### **99 Bottles of Beer** (bottles.js)
   - Write a script that logs to the console the lyrics to "99 Bottles of Beer on the Wall" in the terminal. If you're unfamiliar with the song, you can [find the lyrics here](http://www.99-bottles-of-beer.net/lyrics.html).
   - Make sure your program can handle both singular and plural cases (i.e. both "100 bottles of beer" and "1 bottle of beer").
-* **Random Address Generator** (address.js)
+
+--
+
+### **Random Address Generator** (address.js)
   - Write a script that can generate random addresses
   - As a first step, create arrays that contain dummy data for each of the following: street number, street name, city name, state name and zip code
   - Your script should randomly select one item from each of these arrays and then use them to construct a random address
   - Each time you run the script, it should print a new randomly-generated address to the terminal. For example:
   - `node random-address.js`
   - `=> 34578 Dolphin Street, Wonka NY, 44506`
+
+--
+
 * [Submit bottles.js and address.js to Dropbox](https://www.dropbox.com/request/69D3o6xL6lItexh8dxsX)
 * [Chapter 2: Program Structure, Eloquent JavaScript](http://eloquentjavascript.net/02_program_structure.html)
 * [Chapter 3: Functions, Eloquent JavaScript](http://eloquentjavascript.net/03_functions.html)
 
 **Due Monday, June 27**
+
+---
+
+## [Exit Ticket! (Class 4)](http://goo.gl/forms/KzVZ9fuo2YYw5WIB3)
+
+---
+
+# Goodnight :-)
