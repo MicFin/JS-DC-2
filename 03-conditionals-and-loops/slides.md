@@ -349,7 +349,15 @@ if (typeof(children) === 'function') {
 
 ### Ternary Operators
 
-JavaScript has a ternary operator for conditional expressions. The ternary operator is basically a concise "if-else” in one line, except that it not only executes blocks of code, it also returns a value:
+JavaScript has a ternary operator for conditional expressions. The ternary operator is basically a concise "if-else” in one line, except that it not only executes blocks of code, it also returns a value.
+
+```
+var VARIABLE = EXPRESSION ? VALUE IF TRUE : VALUE IF FALSE;
+```
+
+--
+
+### Ternary
 
 ```javascript
 var age = 12;
@@ -377,21 +385,35 @@ allowed
 //=> "no"
 ```
 
+--
+
 ### Ternaries: How are they used?
 
+react-input-enhancements
 ```javascript
 var value = (typeof(props.value) === 'undefined') ? props.defaultValue : props.value
 ```
 
 ---
 
-## [Exercise: Conditionals](starter-code/gradely.js) (25 min)
+## [Exercise: Conditionals](starter-code/gradely.js)
 
 ---
 
-## Truthy and Falsey (15 min)
+## Truthiness
 
-JavaScript not only has `true` and `false`, but it also has `truthy` and `falsey`. `truthy` values are values that behave like `true` when used in a conditional. Likewise, `falsey` values are those that behave like `false` in a conditional.
+<img src="img/truthiness.jpg" style="max-height: 500px" />
+
+--
+
+### Truthy and Falsey
+
+- "truthy" values are those that behave like `true` when used in a conditional
+- "falsey" values are those that bahave like `false` when used in a conditional
+
+--
+
+### Falsey Values
 
 All of the following become false when converted to a Boolean:
 
@@ -402,9 +424,17 @@ All of the following become false when converted to a Boolean:
 - `undefined`
 - `null`
 
-All other values become true when converted to a Boolean.
+--
+
+### Truthy Values
+
+Everything else.
+
+--
 
 ### Truthiness Eye Test
+
+--
 
 ```javascript
 var myVariable;
@@ -415,6 +445,8 @@ if (myVariable) {
 }
 ```
 
+--
+
 ```javascript
 var myVariable = -1;
 if (myVariable) {
@@ -423,6 +455,8 @@ if (myVariable) {
   console.log("B");
 }
 ```
+
+--
 
 ```javascript
 var myVariable = "false";
@@ -433,6 +467,8 @@ if (myVariable) {
 }
 ```
 
+--
+
 ```javascript
 var myVariable = 0;
 if (myVariable) {
@@ -441,6 +477,8 @@ if (myVariable) {
   console.log("B");
 }
 ```
+
+--
 
 ```javascript
 var myVariable = [];
@@ -451,15 +489,17 @@ if (myVariable) {
 }
 ```
 
-*Find more on truthy and falsey values [here](http://adripofjavascript.com/blog/drips/truthy-and-falsy-values-in-javascript.html)*
-
 ---
 
 ## Review: Arrays
 
+--
+
 ### Array Index
 
 <img src="../02-data-types/img/array_index_diagram.png" style="max-height: 500px" />
+
+--
 
 ### Array Length
 
@@ -470,6 +510,8 @@ friends.length
 // 3
 ```
 
+--
+
 ### Array Insertion
 
 ```javascript
@@ -477,6 +519,8 @@ var a = ["dog", "cat", "hen"];
 a[2] = "fox";
 // ["dog", "cat", "fox"]
 ```
+
+--
 
 ### Getting Data from an Array
 
@@ -487,6 +531,8 @@ var a = ["dog", "cat", "hen"];
 a[1];
 // "cat"
 ```
+
+--
 
 ### Array Methods
 
@@ -506,9 +552,13 @@ Arrays come with a number of methods to help us work with them:
 
 ---
 
-## Loops (15 min)
+## Loops
 
-Looping or iterating is a way of incrementally repeating a task. We use loops to perform repetitive behavior in our code without repeating ourselves. Often, loops, especially `for` loops are used to operate on each element in an Array.
+Note:
+
+Looping is a way of repeating a task. We use loops to perform repetitive behavior in our code without repeating ourselves. Often, loops, especially `for` loops are used to operate on each element in an Array.
+
+--
 
 ### For loop
 
@@ -523,7 +573,11 @@ for (var i = 0; i < 5; i++) {
 // 4
 ```
 
+Note:
+
 Notice the placement of the comma and semi-colons.
+
+--
 
 ### Anatomy of For Loop
 
@@ -536,6 +590,8 @@ for (var i = 0; i <= 4; i++) {
 	console.log(i);
 }
 ```
+
+--
 
 ### For loop for iteration
 

@@ -80,4 +80,12 @@ C. [Class Pass](./assets/class-pass.png) printed out or on your phone
 
 --
 
+### Class 03: Conditionals and Loops
+
+- [Slides](http://ga-students.github.io/JS-DC-2/03-conditionals-and-loops/)
+- [Video](http://www.youtube.com/watch?v=3WDDV_eawmw)
+- [Assignment](03-conditionals-and-loops/assignment.md)
+
+--
+
 ## FAQ
