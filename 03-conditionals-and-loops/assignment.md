@@ -10,6 +10,16 @@
   - Each time you run the script, it should print a new randomly-generated address to the terminal. For example:
   - `node random-address.js`
   - `=> 34578 Dolphin Street, Wonka NY, 44506`
+* **BONUS: What day?** (day.js)
+  - Write a `switch` statement to log to the console the appropriate day name for a given number.
+    - 0: Sunday
+    - 1: Monday
+    - 2: Tuesday
+    - 3: Wednesday
+    - 4: Thursday
+    - 5: Friday
+    - 6: Saturday
+  - Write a second `switch` statement to log 'Weekday' or 'Weekend' based on a given number. Use fall-through.
 * [Submit bottles.js and address.js to Dropbox](https://www.dropbox.com/request/69D3o6xL6lItexh8dxsX)
 * [Chapter 2: Program Structure, Eloquent JavaScript](http://eloquentjavascript.net/02_program_structure.html)
 * [Chapter 3: Functions, Eloquent JavaScript](http://eloquentjavascript.net/03_functions.html)

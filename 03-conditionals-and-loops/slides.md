@@ -757,6 +757,19 @@ while (i < l) {
 
 **Due Monday, June 27**
 
+--
+
+* **BONUS: What day?** (day.js)
+  - Write a `switch` statement to log to the console the appropriate day name for a given number.
+    - 0: Sunday
+    - 1: Monday
+    - 2: Tuesday
+    - 3: Wednesday
+    - 4: Thursday
+    - 5: Friday
+    - 6: Saturday
+  - Write a second `switch` statement to log 'Weekday' or 'Weekend' based on a given number. Use fall-through.
+
 ---
 
 ## [Exit Ticket! (Class 4)](http://goo.gl/forms/KzVZ9fuo2YYw5WIB3)
