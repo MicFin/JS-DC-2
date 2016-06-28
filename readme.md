@@ -48,7 +48,7 @@ C. [Class Pass](./assets/class-pass.png) printed out or on your phone
 | Lesson 1 | [JS on the Command Line](01-command-line-JS/readme.md) || Lesson 12 | [Lab Time](12-in-class-lab/readme.md)|
 | Lesson 2 | [Data Types](02-data-types/readme.md) || **Project 2**  | Feedr - Your Personalized Feed Reader |
 | Lesson 3| [Conditionals and Loops](03-conditionals-and-loops/readme.md) || Lesson 13 | [Prototypical Inheritance](13-prototypical-inheritance/readme.md) |
-| Lesson 4 | [Functions and Scope](04-functions-and-scope/readme.md) || Lesson 14 | [Closures and This](14-closures-and-this/readme.md) |
+| Lesson 4 | [Functions](04-functions/readme.md) || Lesson 14 | [Closures and This](14-closures-and-this/readme.md) |
 | Lesson 5 | [Objects and JSON](05-objects-and-json/readme.md) || Lesson 15 | [Intro to Crud and Firebase](15-intro-to-crud-and-firebase) |
 | Lesson 6 | [**Project 1 Lab**](06-in-class-lab) || Lesson 16 | [Deploying Your App](16-deploying-your-app/readme.md) |
 | Lesson 7 | [Intro to DOM & jQuery](07-intro-to-dom-and-jquery/readme.md)|| Lesson 17 |  [Instructor Student Choice](17-instructor-student-choice/readme.md) |
