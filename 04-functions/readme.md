@@ -1,4 +1,4 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Functions and Scope (3:00)
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Functions (3:00)
 
 ### Objectives
 
@@ -12,8 +12,8 @@
 
 ### Agenda
 
-| Timing | Type | Topic |
-| --- | --- | --- |
+| Timing | Topic |
+| --- | --- |
 | 25 min | Review |
 | 25 min | Exercise: Array Iteration |
 | 10 min | While Loops |
@@ -21,11 +21,11 @@
 | 10 min | Intro to functions |
 | 15 min | Function Declaration |
 | 20 min | Exercise: Rolling Dice |
-| 25 min | Parameters |
-| 20 min | Exercise: Parameterization |
-| 25 min | The Return Statement |
-| 20 min | Exercise: Return Statement |
-| 20 min | First-class & Higher-order Functions |
+| 15 min | Parameters |
+| 15 min | Exercise: Parameterization |
+| 15 min | The Return Statement |
+| 15 min | Exercise: Return Statement |
+| (20 min)* | First-class & Higher-order Functions |
 | 5 min | Final Questions & Exit Tickets |
 
 >Note: The content in this lesson can be challenging for students with limited programming experience. Make sure to check for understanding as you go and spend additional time on any of the following sections if necessary.
@@ -38,14 +38,6 @@
 - Use Boolean logic (!, &&, ||) to combine and manipulate conditionals
 
 >Note: Last class, we worked on data types, conditional statements, and logical and comparison operators. Check with students to make sure that everyone is comfortable with the materials covered in the last class.
-
----
-
-## Announcements
-
-Note:
-
-- HW grading
 
 ---
 

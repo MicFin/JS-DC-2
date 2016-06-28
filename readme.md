@@ -56,6 +56,8 @@ C. [Class Pass](./assets/class-pass.png) printed out or on your phone
 | Lesson 9 | [AJAX and APIs](09-ajax-and-apis/readme.md) || **Project 3** | Your Single Page App |
 | Lesson 10| [Asynchronous JS and Callbacks](10-asynchronous-javascript-and-callbacks/readme.md) | |Lesson 19| Final Project Presentations |
 
+---
+
 ## Classes
 
 ### Class 00: Installfest
@@ -88,5 +90,13 @@ C. [Class Pass](./assets/class-pass.png) printed out or on your phone
 - [Bonus](03-conditionals-and-loops/bonus/readme.md)
 
 --
+
+### Class 04: Functions
+
+- [Slides](http://ga-students.github.io/JS-DC-2/04-functions/)
+- [Video](http://www.youtube.com/watch?v=bTYnuCb4Xzw)
+- [Bonus](04-functions/bonus/readme.md)
+
+---
 
 ## FAQ
