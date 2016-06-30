@@ -101,7 +101,7 @@ C. [Class Pass](./assets/class-pass.png) printed out or on your phone
 
 ### Class 05: Objects
 
-- [Slides](http://ga-students.github.io/JS-DC-2/04-objects/)
+- [Slides](http://ga-students.github.io/JS-DC-2/05-objects/)
 - [Video](http://www.youtube.com/watch?v=EH8zoJBrkKo)
 - [Assignment](https://github.com/jacobdfriedmann/JSDC2-Assignment3)
 - [Bonus](05-objects/bonus/readme.md)
