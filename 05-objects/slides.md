@@ -19,6 +19,11 @@
 | 20 min | JavaScript Objects |
 | 20 min | Exercise: Modeling data |
 | 15 min | Functions as Data Types |
+
+--
+
+| Timing | Topic |
+| --- | --- |
 | 20 min | Exercise: Math library |
 | 20 min | Higher order functions |
 | 20 min | Exercise: Array forEach |
@@ -510,6 +515,8 @@ var prompt = require('prompt');
 prompt.start();
 ```
 
+--
+
 ### Collect user input
 
 ```javascript
@@ -569,6 +576,8 @@ prompt.get(['username', 'email'], function (err, result) {
 --
 
 <img src="../01-command-line-JS/img/workflow1_9.png" style="max-height: 700px" />
+
+--
 
 ### Open Source
 
@@ -640,7 +649,7 @@ Why might we fork?
 
 ---
 
-## Assignment 3
+## [Assignment 3](https://github.com/jacobdfriedmann/JSDC2-Assignment3)
 
 ---
 
