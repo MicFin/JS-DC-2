@@ -106,6 +106,13 @@ C. [Class Pass](./assets/class-pass.png) printed out or on your phone
 - [Assignment](https://github.com/jacobdfriedmann/JSDC2-Assignment3)
 - [Bonus](05-objects/bonus/readme.md)
 
+--
+
+### Class 06: Lab
+
+- [Lab](06-lab/readme.md)
+- [Video](http://www.youtube.com/watch?v=WyiThjsnFrI)
+
 ---
 
 ## FAQ
