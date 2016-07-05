@@ -112,7 +112,7 @@ C. [Class Pass](./assets/class-pass.png) printed out or on your phone
 
 - [Lab](06-lab/readme.md)
 - [Video](http://www.youtube.com/watch?v=WyiThjsnFrI)
-- [Slides](http://ga-students.github.io/JS-DC-2/06-lab/)
+- [Slides](http://ga-students.github.io/JS-DC-2/06-lab/slides.html)
 
 ---
 
