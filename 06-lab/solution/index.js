@@ -226,7 +226,7 @@ function win() {
     'You look closer and see the name on the card:',
     '"' + playerName + '"',
     'YOU WIN'.green
-  ], function () {});
+  ]);
 }
 
 begin();

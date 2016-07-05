@@ -6,7 +6,7 @@
 - Store functions in variables, arrays and objects
 - Create and understand Higher-order functions
 - Accept User input in node application
-- Fork, Clone, and Pull Request Git Repositoriess
+- Fork, Clone, and Pull Request Git Repositories
 
 ---
 
