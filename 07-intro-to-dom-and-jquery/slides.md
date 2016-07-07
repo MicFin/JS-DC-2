@@ -169,9 +169,9 @@ document.querySelectorAll('.my-class');
 
 ---
 
-TODO: Add jQuery image
-
 ## Intro to jQuery
+
+<img src="img/jquery.png" style="max-heigth: 300px" />
 
 jQuery is a JavaScript library.
 
@@ -290,26 +290,21 @@ $(document).ready(function() {
 
 ---
 
-## Codealong: jQuery and DOM (15 min)
+## Code-along: jQuery and DOM (15 min)
 
 ---
 
-<a name = "conclusion"></a>
-
-## Conclusion (5 min)
-
-Ask students what was learned. Make sure the objectives have been met.
-
-* Uderstand how HTML parses and creates the object model, the DOM.
-* Use selectors and methods to access and update HTML using the DOM.
-
-## Assignment
+## Assignment 4
 
 - Create a GitHub repository for your Unit 1 Project (the S.R.S.V. game)
-- Drop a link to the repository here:
+- Drop a link to the repository [here](https://docs.google.com/forms/d/1sVghsOaS81_zhlKV9mhYtfx6Z4zEG33b_A5iFtHWurY/viewform)
+- [Eloquent JS - Chapter 12: JavaScript and The Browser](http://eloquentjavascript.net/12_browser.html)
+- [Eloquent JS - Chapter 13: The Document Object Model](http://eloquentjavascript.net/13_dom.html)
 
-TODO: Add link here
+--
 
-#### Further Resources
+## [Exit Ticket! (Class 8)](http://goo.gl/forms/KzVZ9fuo2YYw5WIB3)
 
-TODO: Add resources
+---
+
+# Goodnight :-)
