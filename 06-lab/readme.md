@@ -10,6 +10,28 @@ We'll be using the [game-prompt](https://github.com/jacobdfriedmann/game-prompt)
 
 Use the installation instructions listed in the module's README to start using it in your project.
 
+#### 1. Create a new folder for your project
+
+```
+mkdir srsv
+```
+
+#### 2. Initialize a Node project
+
+We'll be using the Node Package Manager for this project. To start the project run:
+
+```
+npm init
+```
+
+And answer each of the questions.
+
+#### 3. Install the project dependencies
+
+```
+npm install --save game-prompt colors
+```
+
 ### Sample Story
 
 #### Intro
