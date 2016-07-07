@@ -14,6 +14,7 @@ Use the installation instructions listed in the module's README to start using i
 
 ```
 mkdir srsv
+cd srsv
 ```
 
 #### 2. Initialize a Node project
