@@ -301,6 +301,8 @@ $(document).ready(function() {
 - [Eloquent JS - Chapter 12: JavaScript and The Browser](http://eloquentjavascript.net/12_browser.html)
 - [Eloquent JS - Chapter 13: The Document Object Model](http://eloquentjavascript.net/13_dom.html)
 
+Due Monday, July 11
+
 --
 
 ## [Exit Ticket! (Class 8)](http://goo.gl/forms/KzVZ9fuo2YYw5WIB3)
