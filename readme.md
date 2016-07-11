@@ -52,7 +52,7 @@ C. [Class Pass](./assets/class-pass.png) printed out or on your phone
 | Lesson 5 | [Objects](05-objects/readme.md) || Lesson 15 | [Intro to Crud and Firebase](15-intro-to-crud-and-firebase) |
 | Lesson 6 | [**Project 1 Lab**](06-in-class-lab) || Lesson 16 | [Deploying Your App](16-deploying-your-app/readme.md) |
 | Lesson 7 | [Intro to DOM & jQuery](07-intro-to-dom-and-jquery/readme.md)|| Lesson 17 |  [Instructor Student Choice](17-instructor-student-choice/readme.md) |
-| Lesson 8 | [DOM & jQuery Continued](08-dom-and-jquery-continued/readme.md) || Lesson 18 |[Lab Time](18-lab-time/readme.md) |
+| Lesson 8 | [Events and Templating](08-events-and-templating/readme.md) || Lesson 18 |[Lab Time](18-lab-time/readme.md) |
 | Lesson 9 | [AJAX and APIs](09-ajax-and-apis/readme.md) || **Project 3** | Your Single Page App |
 | Lesson 10| [Asynchronous JS and Callbacks](10-asynchronous-javascript-and-callbacks/readme.md) | |Lesson 19| Final Project Presentations |
 
@@ -121,6 +121,14 @@ C. [Class Pass](./assets/class-pass.png) printed out or on your phone
 - [Slides](http://ga-students.github.io/JS-DC-2/07-intro-to-dom-and-jquery/)
 - [Video](http://www.youtube.com/watch?v=Wp7b5n7VwQo)
 - [Assignment](07-intro-to-dom-and-jquery/assignment.md)
+
+--
+
+### Class 08: Events and Templating
+
+- [Slides](http://ga-students.github.io/JS-DC-2/08-events-and-templating/)
+- [Video](http://www.youtube.com/watch?v=rEbe24jA1-g)
+- [Bonus](08-events-and-templating/bonus/readme.md)
 
 ---
 

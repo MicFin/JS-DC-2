@@ -1,0 +1,87 @@
+{
+  "id": "review",
+  "name": "Review Quiz",
+  "questions": [
+    {
+      "q": "When setting up a webpage, what purpose does the `DOCTYPE` serve?",
+      "a": "b",
+      "choices": {
+        "a": "Tells search engine what your page is about",
+        "b": "Tells the browser what HTML version you are using",
+        "c": "It serves no purpose",
+        "d": "Tells the browser what CSS version you are using"
+      }
+    },
+    {
+      "q": "What is the preferred method of including JavaScript on a webpage?",
+      "a": "c",
+      "choices": {
+        "a": "Include JavaScript inline with HTML elements (i.e. in an `onclick` attribute)",
+        "b": "Include JavaScript within a `<script>` tag, but in the same file as HTML",
+        "c": "Include JavaScript in a different file and pull it in using a `<script>` tag",
+        "d": "Either b or c"
+      }
+    },
+    {
+      "q": "How can we interact with the Document Object Model in a JavaScript application?",
+      "a": "a",
+      "choices": {
+        "a": "By using the global `document` object",
+        "b": "By using the global `window` object",
+        "c": "We must have a library like jQuery to interact with the DOM",
+        "d": "There is no way to interact directly with the DOM in JavaScript"
+      }
+    },
+    {
+      "q": "For what reason did developers abandon original JS methods of selecting DOM elements (i.e. `getElementById`)?",
+      "a": "d",
+      "choices": {
+        "a": "They were verbose",
+        "b": "They behaved differently in other browsers",
+        "c": "Better options became available",
+        "d": "All the above"
+      }
+    },
+    {
+      "q": "Which best describes the method jQuery uses to find HTML elements in the DOM?",
+      "a": "c",
+      "choices": {
+        "a": "using HTML class names",
+        "b": "using the HTML id attribute",
+        "c": "using CSS Selectors",
+        "d": "using JS Selectors"
+      }
+    },
+    {
+      "q": "What CSS selector could be used to style the text 'hello world' in this HTML:\n```\n<div id='prompt'>\n   <span class='greeting'>\n        <strong>hello world</strong>\n    </span>\n</div>\n```",
+      "a": "e",
+      "choices": {
+        "a": "`#prompt .greeting strong`",
+        "b": "`#greeting`",
+        "c": "`.greeting`",
+        "d": "Either a. or b.",
+        "e": "Either a. or c."
+      }
+    },
+    {
+      "q": "What jQuery code could be used to select all list items with a class 'active' inside of a `ul` with an id of 'myList'?",
+      "a": "d",
+      "choices": {
+        "a": "`$('#myList.active')`",
+        "b": "`$('#myList .active')`",
+        "c": "`$('#myList li.active')`",
+        "d": "Either b. or c."
+      }
+    },
+    {
+      "q": "What data type is `$` when using jQuery?",
+      "a": "a",
+      "choices": {
+        "a": "function",
+        "b": "array",
+        "c": "string",
+        "d": "boolean"
+      }
+    }
+  ]
+}
