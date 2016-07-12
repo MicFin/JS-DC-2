@@ -64,6 +64,125 @@ When making a request (like when sending an invoice), we need to specify where t
 - *path* - where on the server to look
 - *query parameters* - key, value pairs
 
+#### HTTP Request: Method (Verb)
+
+HTTP Requests specify a "method" that defines what the request is intended to do. We sometimes call these methods HTTP "verbs":
+
+- **GET**: *read* some data
+- **POST**: *create* some data
+- **PUT**: *update* some data
+- **DELETE**: *delete* some data
+
+When we enter and URL into the address bar of our browser, what kind of request do you think we are making?
+
+#### HTTP Request: Headers
+
+Request headers are metadata about your request. They can be used for authentication, cookies, security, and many other things:
+
+Common headers:
+
+- *"Cookie"* - a list of cookies that have been set on the browser
+- *"Auth"* - encrypted auth information
+- *"Content-type"* - tells server what kind of content is inside the request
+- *"Origin"* - where the request came from
+
+We can think of headers as stuff written on the outside of the envelope.
+
+#### HTTP Request: Body
+
+Optional extra text data we can send to the server. Especially useful for *PUT* and *POST* requests.
+
+Body data is typically in the form of JSON (JavaScript Object Notation).
+
+### HTTP Response
+
+When a server receives a request, it processes that request and then sends a response to the client.
+
+If the request is an invoice, a response is the payment being sent back.
+
+#### HTTP Response: Status Code
+
+Every HTTP Response has a status code that represents whether or not the request was successfully fulfilled.
+
+Common Status Codes:
+
+- *2XX* Success
+    - *200* OK - the request was processed successfully
+- *3XX* Redirects - the URL has changed
+- *4XX* Problem with the request
+    - *400* Bad Request (generic bad request code)
+    - *404* Not Found (The URL is wrong)
+- *5XX* Problem with the server
+    - *500* Generic server error
+    - *503* Service Unavailable (usually happens when traffic is high)
+
+#### HTTP Response: Headers
+
+Just like the request, a response can also have headers describing metadata.
+
+#### HTTP Response: Body
+
+The body of a response can contain:
+
+- HTML if we are requesting a webpage
+- CSS if we're requesting linked stylesheets
+- JS if we're requesting scripts
+- JSON if we're requesting data
+
+### The Network Tab
+
+We can use the Chrome Network tab to look at HTTP Requests and Responses.
+
+When we first load a page, we see the HTML is Requested. The browser then combs through the HTML and makes a request for each css file, image, javascript file in the markup.
+
+### JSON
+
+JavaScript Object Notation is a data "format" that is often used to communicate over HTTP.
+
+Servers written in all languages can communicate in JSON.
+
+It is like English in our mail metaphor. A common "language" between services.
+
+#### JSON Syntax
+
+Looks just like JavaScript Objects, but with stricter syntax:
+
+```json
+{
+    "key": "value",
+    "anotherKey": [
+        1,
+        2,
+        3
+    ]
+}
+```
+
+Luckily, we don't usually write our own JSON, we let libraries handle converting real Objects to JSON for us.
+
+#### JSON Values
+
+Values can be:
+
+- Numbers
+- Objects
+- Arrays
+- Strings
+- Booleans
+- null
+
+#### JSON Demo
+
+We can use the console we can experiment with the global JSON object that has methods for converting data to JSON.
+
+---
+
+## Web Application Architecture
+
+### Traditional Webpages
+
+A traditional webpage
+
 <a name = "opening"></a>
 ## APIs: Introduction (15 min)
 

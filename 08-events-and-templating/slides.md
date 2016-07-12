@@ -31,6 +31,10 @@
 
 ---
 
+## Finish Mid-Course Survey
+
+---
+
 ## Review: Quiz
 
 ---
@@ -74,8 +78,6 @@ $('div').html('Hello World!');
 ---
 
 ## Exercise: Manipulating the DOM
-
-Note:
 
 - Change list items to blue
 - Bold the first list item
@@ -214,8 +216,8 @@ function doSomething() {
 
 Note:
 
-- When list items are clicked, add a strikethrough
 - Refactor the original code into a "setup" function
+- When list items are clicked, add a strikethrough
 - Find the button element
 - When it is clicked, add an item to the list with the value of the input
 - BONUS: Make the todo add when enter is pressed too
@@ -481,7 +483,10 @@ Handlebars has a 4 step process to implementing templates in our applications:
   var source = $('#hello-world-template').html();
   var template = Handlebars.compile(source);
 
-  var helloStatement = { helloTitle: "Hello world", helloContent: "GA JS class is just awesome"};
+  var helloStatement = {
+      helloTitle: "Hello world",
+      helloContent: "GA JS class is just awesome"
+  };
 
   var renderedTemplate = template(helloStatement);
 ```
@@ -496,12 +501,13 @@ Handlebars has a 4 step process to implementing templates in our applications:
   var source = $('#hello-world-template').html();
   var template = Handlebars.compile(source);
 
-  var helloStatement = { helloTitle: "Hello world", helloContent: "GA JS class is just awesome"};
+  var helloStatement = {
+      helloTitle: "Hello world",
+      helloContent: "GA JS class is just awesome"
+  };
 
   var renderedTemplate = template(helloStatement);
   $('body').append(renderedTemplate);
-
-  // or you could have done $('body').append(template(helloStatement));
 ```
 
 --
