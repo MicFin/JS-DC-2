@@ -130,6 +130,15 @@ C. [Class Pass](./assets/class-pass.png) printed out or on your phone
 - [Video](http://www.youtube.com/watch?v=rEbe24jA1-g)
 - [Bonus](08-events-and-templating/bonus/readme.md)
 
+--
+
+### Class 09: MVC and AJAX
+
+- [Slides](http://ga-students.github.io/JS-DC-2/09-mvc-and-ajax/)
+- [Video](http://www.youtube.com/watch?v=2djjrbNflW4)
+- [Bonus](09-mvc-and-ajax/bonus/readme.md)
+- [Assignment](https://github.com/jacobdfriedmann/JSDC2-Assignment5)
+
 ---
 
 ## FAQ

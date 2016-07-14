@@ -49,7 +49,7 @@
       "choices": {
         "a": "Use a delegated event listener on a static parent element",
         "b": "Attach event listeners to new elements when they are added to the DOM",
-        "c": "Make the dynamic elements static and use JavaScript to hide and show them",
+        "c": "Make the dynamic elements static and use JavaScript to change their css `visibility`",
         "d": "All of these could work"
       }
     },
@@ -81,16 +81,6 @@
         "b": "Representing the application's state in JavaScript",
         "c": "Rendering data to HTML",
         "d": "Communicating among various parts of the application"
-      }
-    },
-    {
-      "q": "What control flow structures can we use within a template?",
-      "a": "d",
-      "choices": {
-        "a": "conditionals",
-        "b": "loops",
-        "c": "functions",
-        "d": "All of the above"
       }
     }
   ]
