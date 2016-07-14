@@ -1,12 +1,10 @@
 # ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
 ## MVC & AJAX
 
+- Use MVC to organize front-end applications
+- Use Handlebars templates to turn JS into HTML
 - Identify all the HTTP Verbs & their uses.
-- Describe APIs and how to make calls and consume API data.
-- Access public APIs and get information back.
-- Implement an AJAX request with Vanilla JS.
 - Implement a jQuery AJAX client for a simple REST service.
-- Reiterate the benefits of separation of concerns – API vs. Client.
 
 ---
 
@@ -307,7 +305,7 @@ Optional extra text data we can send to the server. Especially useful for ​*PU
 
 ### HTTP Response
 
-![URL](images/http1-url-structure.png)
+![URL](images/http1.png)
 
 Note:
 
@@ -412,6 +410,10 @@ Values can be:
 - Strings
 - Booleans
 - null
+
+--
+
+#### Install JSON Formatter
 
 --
 

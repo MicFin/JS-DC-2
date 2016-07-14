@@ -3,12 +3,10 @@
 ##  Objectives
 *After this lesson, students will be able to:*
 
+- Use MVC to organize front-end applications
+- Use Handlebars templates to turn JS into HTML
 - Identify all the HTTP Verbs & their uses.
-- Describe APIs and how to make calls and consume API data.
-- Access public APIs and get information back.
-- Implement an AJAX request with Vanilla JS.
 - Implement a jQuery AJAX client for a simple REST service.
-- Reiterate the benefits of separation of concerns – API vs. Client.
 
 ## Agenda
 
