@@ -1,5 +1,14 @@
 // Model
-var todos = [];
+var todos = [
+  {
+    text: 'Hello',
+    completed: false
+  },
+  {
+    text: 'World',
+    completed: false
+  }
+];
 
 // View
 
@@ -25,7 +34,6 @@ function setup() {
   $('#todoList').on('click', '.complete', markCompleted);
   $('#todoList').on('click', '.delete', deleteTodo);
   $('#submit').on('click', addTodo);
-  $('#load').on('click', loadTodos);
 }
 
 function markCompleted() {
@@ -49,17 +57,6 @@ function addTodo() {
   });
 
   renderTodos();
-}
-
-function loadTodos() {
-  $.ajax({
-    type: 'GET',
-    url: 'http://jacobfriedmann.com:3000/todos',
-    success: function(data) {
-      todos = todos.concat(data);
-      renderTodos();
-    }
-  });
 }
 
 $(document).ready(setup);

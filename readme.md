@@ -44,7 +44,7 @@ C. [Class Pass](./assets/class-pass.png) printed out or on your phone
 
 | Class | Title |  | Class | Title |
 | --- | :---: | --- |  --- | :---: |
-| Lesson 0 | [Installfest](00-installfest/slides.md) || Lesson 11 | [Advanced APIs](11-advanced-apis/readme.md)|
+| Lesson 0 | [Installfest](00-installfest/slides.md) || Lesson 11 | [Debugging and AJAX](11-debugging-and-ajax/readme.md)|
 | Lesson 1 | [JS on the Command Line](01-command-line-JS/readme.md) || Lesson 12 | [Lab Time](12-in-class-lab/readme.md)|
 | Lesson 2 | [Data Types](02-data-types/readme.md) || **Project 2**  | Feedr - Your Personalized Feed Reader |
 | Lesson 3| [Conditionals and Loops](03-conditionals-and-loops/readme.md) || Lesson 13 | [Prototypical Inheritance](13-prototypical-inheritance/readme.md) |
@@ -53,8 +53,8 @@ C. [Class Pass](./assets/class-pass.png) printed out or on your phone
 | Lesson 6 | [**Project 1 Lab**](06-in-class-lab) || Lesson 16 | [Deploying Your App](16-deploying-your-app/readme.md) |
 | Lesson 7 | [Intro to DOM & jQuery](07-intro-to-dom-and-jquery/readme.md)|| Lesson 17 |  [Instructor Student Choice](17-instructor-student-choice/readme.md) |
 | Lesson 8 | [Events and Templating](08-events-and-templating/readme.md) || Lesson 18 |[Lab Time](18-lab-time/readme.md) |
-| Lesson 9 | [AJAX and APIs](09-ajax-and-apis/readme.md) || **Project 3** | Your Single Page App |
-| Lesson 10| [Asynchronous JS and Callbacks](10-asynchronous-javascript-and-callbacks/readme.md) | |Lesson 19| Final Project Presentations |
+| Lesson 9 | [MVC and Ajax](09-mvc-and-ajax/readme.md) || **Project 3** | Your Single Page App |
+| Lesson 10| [HTTP and AJAX](10-http-and-ajax/readme.md) | |Lesson 19| Final Project Presentations |
 
 ---
 
@@ -138,6 +138,22 @@ C. [Class Pass](./assets/class-pass.png) printed out or on your phone
 - [Video](http://www.youtube.com/watch?v=2djjrbNflW4)
 - [Bonus](09-mvc-and-ajax/bonus/readme.md)
 - [Assignment](https://github.com/jacobdfriedmann/JSDC2-Assignment5)
+
+--
+
+### Class 10: HTTP and AJAX
+
+- [Slides](http://ga-students.github.io/JS-DC-2/10-http-and-ajax/)
+- [Video](http://www.youtube.com/watch?v=1MR-NgsS5Hk)
+- [Bonus](09-mvc-and-ajax/bonus/readme.md)
+
+--
+
+### Class 11: Debugging and AJAX
+
+- [Slides](http://ga-students.github.io/JS-DC-2/10-ajax-and-debugging/)
+- [Video](http://www.youtube.com/watch?v=83pjoJlWLto)
+- [Bonus](https://developers.google.com/web/tools/chrome-devtools/?hl=en)
 
 ---
 

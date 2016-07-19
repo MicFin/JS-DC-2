@@ -1,0 +1,26 @@
+{
+  "name": "Review Quiz",
+  "id": "review",
+  "questions": [
+    {
+      "q": "What is a Type Error in JavaScript?",
+      "a": "d",
+      "choices": {
+        "a": "An error thrown when parentheses are unbalanced",
+        "b": "An error thrown when we use a function that hasn't been defined",
+        "c": "An error thrown when we use a incorrect CSS Selector for jQuery",
+        "d": "An error thrown when a data type is used incorrectly"
+      }
+    },
+    {
+      "q": "What Dev Tools tab allows us to \"step\" through code?",
+      "a": "a",
+      "choices": {
+        "a": "Sources",
+        "b": "Network",
+        "c": "Console",
+        "d": "Resources"
+      }
+    }
+  ]
+}

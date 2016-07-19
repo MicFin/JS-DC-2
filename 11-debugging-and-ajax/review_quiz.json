@@ -1,0 +1,76 @@
+{
+  "name": "Review Quiz",
+  "id": "review",
+  "questions": [
+    {
+      "q": "What can HTTP be used for?",
+      "a": "d",
+      "choices": {
+        "a": "To load JSON data from a server",
+        "b": "To load the HTML for a website",
+        "c": "To load asset files, like JS, CSS, and images",
+        "d": "All of the Above"
+      }
+    },
+    {
+      "q": "In the following URL, what is `api.openweathermap.org` \n`http://api.openweathermap.org/data/2.5/weather?q=London`",
+      "a": "c",
+      "choices": {
+        "a": "protocol",
+        "b": "query",
+        "c": "host",
+        "d": "path"
+      }
+    },
+    {
+      "q": "Where in a HTTP request would be the best place put information about authentication?",
+      "a": "a",
+      "choices": {
+        "a": "headers",
+        "b": "url",
+        "c": "method",
+        "d": "body"
+      }
+    },
+    {
+      "q": "What is the data format most commonly used to communicate between client and server?",
+      "a": "b",
+      "choices": {
+        "a": "XML",
+        "b": "JSON",
+        "c": "JS",
+        "d": "HTML"
+      }
+    },
+    {
+      "q": "What is not a valid value type in JSON data?",
+      "a": "c",
+      "choices": {
+        "a": "Number",
+        "b": "Array",
+        "c": "Function",
+        "d": "Object"
+      }
+    },
+    {
+      "q": "What does the PUT method mean in HTTP?",
+      "a": "c",
+      "choices": {
+        "a": "Read",
+        "b": "Create",
+        "c": "Update",
+        "d": "Remove"
+      }
+    },
+    {
+      "q": "What jQuery function would we use to make a PUT request?",
+      "a": "a",
+      "choices": {
+        "a": "`$.ajax`",
+        "b": "`$.get`",
+        "c": "`$.post`",
+        "d": "`$.put`"
+      }
+    }
+  ]
+}
