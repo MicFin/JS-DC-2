@@ -1,4 +1,6 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) ## HTTP and AJAX
+# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png)
+
+## HTTP and AJAX
 
 - Identify all the parts HTTP Requests and responses.
 - Implement a jQuery AJAX client for a simple data fetching.
@@ -162,7 +164,7 @@ Common Status Codes:
 
 - ​*2XX*​ Success
    - ​*200*​ OK - the request was processed successfully
-- ​*3XX*​ Redirects - the URL has changed
+- ​*3XX*​ Redirects - go to another URL
 - ​*4XX*​ Problem with the request
    - ​*400*​ Bad Request (generic bad request code)
    - *403* Forbidden
@@ -318,6 +320,54 @@ $.get(
 
 --
 
+#### Callback Function
+
+A function passed as an argument to another function that is called at a later point in time.
+
+```js
+$.get(url, callback);
+```
+
+--
+
+#### Why do we need callback functions?
+
+Callback functions are necessary for "asynchronous" functions.
+
+--
+
+#### Asynchronous vs. Synchronous
+
+*Synchronous* functions complete before moving to the next line of code.
+
+*Asychronous* functions initiate an action, but continue to the next line before that action completes.
+
+--
+
+#### Synchronous Function
+
+```js
+function add(a, b) {
+  return a + b;
+}
+
+add(1, 2);
+// add has completed here
+```
+
+--
+
+#### Asynchronous Callbacks
+
+```js
+$.get(url, function(data) {
+  // AJAX Request has completed here
+});
+// AJAX Request has not completed yet here
+```
+
+--
+
 ### What are we GETing?
 
 --
@@ -371,12 +421,6 @@ Values can be:
 --
 
 #### Install JSON Formatter
-
---
-
-#### JSON Demo
-
-We can use the console we can experiment with the global JSON object that has methods for converting data to JSON.
 
 --
 
