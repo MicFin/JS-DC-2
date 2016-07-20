@@ -52,13 +52,9 @@ function addTodo() {
 }
 
 function loadTodos() {
-  $.ajax({
-    type: 'GET',
-    url: 'http://jacobfriedmann.com:3000/todos',
-    success: function(data) {
-      todos = todos.concat(data);
-      renderTodos();
-    }
+  $.get('http://jacobfriedmann.com:3000/todos', function(data) {
+    todos = todos.concat(data);
+    renderTodos();
   });
 }
 
