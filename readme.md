@@ -151,9 +151,18 @@ C. [Class Pass](./assets/class-pass.png) printed out or on your phone
 
 ### Class 11: Debugging and AJAX
 
-- [Slides](http://ga-students.github.io/JS-DC-2/10-ajax-and-debugging/)
+- [Slides](http://ga-students.github.io/JS-DC-2/11-debugging-and-ajax/)
 - [Video](http://www.youtube.com/watch?v=83pjoJlWLto)
 - [Bonus](https://developers.google.com/web/tools/chrome-devtools/?hl=en)
+- [Assignment](https://github.com/jacobdfriedmann/JSDC2-Assignment6)
+
+--
+
+### Class 12: APIs
+
+- [Slides](http://ga-students.github.io/JS-DC-2/12-apis/)
+- [Video](http://www.youtube.com/watch?v=2FvWTH-NG2w)
+
 
 ---
 

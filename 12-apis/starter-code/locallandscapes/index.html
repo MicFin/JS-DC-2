@@ -22,24 +22,12 @@
     <script src="js/500px.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script id="login-template" type="text/x-handlebars-template">
-        {{#unless loggedIn}}
-          <div class="row text-center">
-            <h3>Discover how beautiful your surroundings can be</h3>
-            <input class="btn btn-default" type="submit" value="Login to 500px" id="login">
-          </div>
-        {{/unless}}
+
+
     </script>
     <script id="landscapes-template" type="text/x-handlebars-template">
-        {{#if photos}}
-          <h3>Here are some landscape photos from 500px near you:</h3>
-          <div class="images">
-            {{#each photos}}
-              <img class="image" src="{{image_url}}" />
-            {{/each}}
-          </div>
-        {{else}}
-          <h3>Loading...</h3>
-        {{/if}}
+
+        
     </script>
   </body>
 </html>

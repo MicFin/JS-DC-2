@@ -33,7 +33,7 @@
       }
     },
     {
-      "q": "What is the data format most commonly used to communicate between client and server?",
+      "q": "What is the format most commonly used to communicate data between client and server?",
       "a": "b",
       "choices": {
         "a": "XML",
@@ -63,13 +63,23 @@
       }
     },
     {
-      "q": "What jQuery function would we use to make a PUT request?",
-      "a": "a",
+      "q": "When is a callback function needed?",
+      "a": "b",
       "choices": {
-        "a": "`$.ajax`",
-        "b": "`$.get`",
-        "c": "`$.post`",
-        "d": "`$.put`"
+        "a": "When we aren't sure what function to call",
+        "b": "When a function is asynchronous",
+        "c": "When a function has multiple steps",
+        "d": "Only when making AJAX requests"
+      }
+    },
+    {
+      "q": "What makes an asynchronous function different than a synchronous one?",
+      "a": "d",
+      "choices": {
+        "a": "Only jQuery has asynchronous functions",
+        "b": "Synchronous function only do one thing",
+        "c": "Asynchronous functions happen next time the page is refreshed",
+        "d": "Asynchronous functions allow code to continue before completing"
       }
     }
   ]
