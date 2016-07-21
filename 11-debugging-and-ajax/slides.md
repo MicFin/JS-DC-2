@@ -29,6 +29,54 @@
 
 ## Review
 
+--
+
+### Callback Function
+
+A function passed as an argument to another function that is called at a later point in time.
+
+```js
+$.get(url, callback);
+```
+
+--
+
+### Why do we need callback functions?
+
+Callback functions are necessary for "asynchronous" functions.
+
+--
+
+### Asynchronous vs. Synchronous
+
+*Synchronous* functions complete before moving to the next line of code.
+
+*Asychronous* functions initiate an action, but continue to the next line before that action completes.
+
+--
+
+### Synchronous Function
+
+```js
+function add(a, b) {
+  return a + b;
+}
+
+add(1, 2);
+// add has completed here
+```
+
+--
+
+### Asynchronous Callbacks
+
+```js
+$.get(url, function(data) {
+  // AJAX Request has completed here
+});
+// AJAX Request has not completed yet here
+```
+
 ---
 
 ## Intro to Debugging
@@ -306,7 +354,33 @@ function processLoginForm(event) {
 
 --
 
-### Exercise: Forms
+## `$.ajax`
+
+This is the "longform" ajax method that is more versatile than `$.get` or `$.post`.
+
+--
+
+### jQuery Options
+
+```js
+$.ajax({
+    type: 'GET',
+    url: 'https://data.cityofnewyork.us/api/views/jb7j-dtam/rows.json?accessType=DOWNLOAD',
+    success: processResponse
+});
+```
+
+Note:
+
+In addition to accepting ordered parameters with specific meaning, many jQuery functions will accept "options" Objects that allow for more configurable use:
+
+--
+
+### Exercise: `$.ajax` and Forms
+
+```
+GET http://jacobfriedmann.com:3000/todos?num=5
+```
 
 ---
 
