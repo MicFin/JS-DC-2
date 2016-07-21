@@ -384,6 +384,26 @@ GET http://jacobfriedmann.com:3000/todos?num=5
 
 ---
 
+## [Assignment](https://github.com/jacobdfriedmann/JSDC2-Assignment6)
+
+---
+
+## Final Project
+
+- [Assignment](https://github.com/ga-students/JS-DC-2/final-project)
+- [Ideas](https://gallery.generalassemb.ly/WDI?metro=)
+
+--
+
+### Final Project Schedule
+
+- Idea Submission: July 25
+- UI Draft: August 2
+- In Class Lab Time: August 16
+- Presentations/Due: August 18
+
+---
+
 ## [Exit Ticket! (Class 12)](http://goo.gl/forms/KzVZ9fuo2YYw5WIB3)
 
 ---
