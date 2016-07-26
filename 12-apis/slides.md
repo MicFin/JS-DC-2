@@ -81,17 +81,14 @@ How we interact with services, like Facebook, Twitter, Instagram, OpenWeatherMap
 
 ```
 endpoint
-========
 
 GET /api/user
 
 parameters
-----------
 
 userId - the id for the user
 
 response
---------
 
 {
   "id": 123,
