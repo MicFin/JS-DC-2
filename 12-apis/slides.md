@@ -3,7 +3,6 @@
 
 - Describe what an API is and how to use it
 - Read documentation to integrate an HTTP API
-- Build an front-end application that uses OAuth for authentication
 
 ---
 
@@ -14,15 +13,7 @@
 | 15 min | HW Review |
 | 20 min | Intro to APIs |
 | 30 min | Exercise: Weatherify |
-
---
-
-## Agenda
-
-| Timing | Topic |
-| --- | --- |
-| 20 min | Advanced APIs |
-| 90 min | Exercise: LocalLandscapes |
+| 110 min | Lab |
 | 5 min | Final Questions & Exit Tickets |
 
 ---
@@ -158,44 +149,7 @@ Generate a token on the website and include it in requests.
 
 ---
 
-## Advanced API Concepts
-
---
-
-### Authentication
-
-- API Keys (simple)
-- OAuth (complex)
-
---
-
-#### OAuth
-
-An open authentication standard that allows you to authenticate your application on behalf of a user.
-
---
-
-#### OAuth
-
-<img src="img/oauth.png" style="max-height: 500px" />
-
---
-
-#### OAuth
-
-The OAuth flow is complicated and implemented differently by different services.
-
---
-
-### Custom Client Libraries / SDKs
-
-Note:
-
-Thankfully, most services that employ OAuth type authentication will also provide a library that can be used to execute OAuth requests. Generally, these libraries will be offered in many different languages, JS being one of them.
-
----
-
-## Exercise: [LocalLandscapes](starter-code/locallandscapes/readme.md)
+## [Lab](https://github.com/jacobdfriedmann/feedr)
 
 ---
 

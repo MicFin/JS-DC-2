@@ -44,5 +44,4 @@ $(document).ready(function() {
     // 3. Render view
 
   });
-
 });
