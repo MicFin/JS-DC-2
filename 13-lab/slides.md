@@ -2,7 +2,6 @@
 ## Lab
 
 - Use AJAX and application architecture skills to build a robust front-end application.
-- Integrate OAuth into a front-end application
 
 ---
 
@@ -11,8 +10,7 @@
 | Timing | Topic |
 | --- | --- |
 | 15 min | Intro to Lab |
-| 100 min | Lab |
-| 50 min | Advanced APIs and OAuth |
+| 150 min | Lab |
 | 5 min | Final Questions & Exit Tickets |
 
 ---

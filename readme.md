@@ -163,6 +163,13 @@ C. [Class Pass](./assets/class-pass.png) printed out or on your phone
 - [Slides](http://ga-students.github.io/JS-DC-2/12-apis/)
 - [Video](http://www.youtube.com/watch?v=2FvWTH-NG2w)
 
+--
+
+### Class 13: Lab
+
+- [Slides](http://ga-students.github.io/JS-DC-2/13-lab/)
+- [Video](http://www.youtube.com/watch?v=xnobeMNl2Pc)
+
 
 ---
 
