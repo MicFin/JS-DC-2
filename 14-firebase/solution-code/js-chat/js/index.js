@@ -1,69 +1,125 @@
 // Model
 
 var model = {
-    messages: []
+  loggedIn: false,
+  user: undefined,
+  messages: {}
 };
 
 // View
 
-// Compile the template outside of the function, so that we only do it once
-// instead of on every render.
+var chatTemplate;
+var formTemplate;
+function compileTemplates() {
+  var templateSource = $('#chat-template').html();
+  chatTemplate = Handlebars.compile(templateSource);
 
-var template;
-$(document).ready(function() {
-    var templateSource = $('#chat-template').html();
-    template = Handlebars.compile(templateSource);
-});
+  var formTemplateSource = $('#form-template').html();
+  formTemplate = Handlebars.compile(formTemplateSource);
+}
 
 function renderChat() {
-    var chatHtml = template(model);
-    $('#chat-log').html(chatHtml);
+  var chatHtml = chatTemplate(model);
+  $('#chatLog').html(chatHtml);
+}
+
+function renderForm() {
+  var formHtml = formTemplate(model);
+  $('#formContainer').html(formHtml);
 }
 
 // Controller
 
 function setup() {
+  compileTemplates();
+  renderForm();
 
-
-    $('#registerForm').on('submit', handleRegister);
-    $('#loginForm').on('submit', handleLogin);
+  $('#formContainer').on('click', '#register', handleRegister);
+  $('#formContainer').on('click', '#login', handleLogin);
+  firebase.auth().onAuthStateChanged(handleAuthStateChange);
+  $('#formContainer').on('click', '#comment', addMessage);
+  $('#formContainer').on('click', '#signOut', handleSignOut);
+  $('#chatLog').on('click', '.upvote', handleUpvote);
+  $('#chatLog').on('click', '.delete', handleDelete);
 }
 
-function handleRegister(event) {
-    event.preventDefault();
+// Auth
 
-    var email = $('#registerForm input[name="email"]').val();
-    var password = $('#registerForm input[name="password"]').val();
+function handleRegister() {
+  var email = $('input[name="email"]').val();
+  var password = $('input[name="password"]').val();
 
-    firebase.auth().createUserWithEmailAndPassword(email, password)
-        .then(function(user) {
-            console.log(user);
-        })
-        .catch(function(error) {
-            // Handle Errors here.
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            // ...
-        });
+  firebase.auth().createUserWithEmailAndPassword(email, password);
 }
 
-function handleLogin(event) {
-    event.preventDefault();
+function handleLogin() {
+  var email = $('input[name="email"]').val();
+  var password = $('input[name="password"]').val();
 
-    var email = $('#loginForm input[name="email"]').val();
-    var password = $('#loginForm input[name="password"]').val();
+  firebase.auth().signInWithEmailAndPassword(email, password);
+}
 
-    firebase.auth().signInWithEmailAndPassword(email, password)
-        .then(function(user) {
-            console.log(user);
-        })
-        .catch(function(error) {
-            console.log(error);
-            // Handle Errors here.
-            var errorCode = error.code;
-            var errorMessage = error.message;
-            // ...
-        });
+function handleSignOut() {
+  firebase.auth().signOut();
+}
+
+function handleAuthStateChange() {
+  var user = firebase.auth().currentUser;
+
+  if (user) {
+    model.user = user;
+    model.loggedIn = true;
+    firebase.database().ref('messages').on('value', getMessages);
+  } else {
+    model.user = undefined;
+    model.loggedIn = false;
+    model.messages = [];
+  }
+
+  renderForm();
+  renderChat();
+}
+
+// CRUD
+
+// Create
+
+function addMessage() {
+  var messagesDB = firebase.database().ref('messages');
+  var messageText = $('textarea[name="message"]').val();
+  $('textarea[name="message"]').val('');
+  messagesDB.push({
+    author: model.user.email,
+    text: messageText,
+    upvotes: 0
+  });
+}
+
+// Read
+
+function getMessages(snapshot) {
+  model.messages = snapshot.val();
+
+  renderChat();
+}
+
+// Update
+
+function handleUpvote() {
+  var messageId = $(this).parent().attr('data-id');
+  var upvotes = model.messages[messageId].upvotes;
+  var newUpvotes = upvotes !== undefined ? upvotes + 1 : 0;
+  var updates = {
+    upvotes: newUpvotes
+  };
+  firebase.database().ref('messages/' + messageId).update(updates);
+}
+
+// Delete
+
+function handleDelete() {
+  var messageId = $(this).parent().attr('data-id');
+  firebase.database().ref('messages/' + messageId).remove();
 }
 
 $(document).ready(setup);
