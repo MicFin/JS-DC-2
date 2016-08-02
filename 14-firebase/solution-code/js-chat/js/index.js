@@ -34,11 +34,13 @@ function setup() {
   compileTemplates();
   renderForm();
 
+  // Event Listeners
   $('#formContainer').on('click', '#register', handleRegister);
   $('#formContainer').on('click', '#login', handleLogin);
-  firebase.auth().onAuthStateChanged(handleAuthStateChange);
-  $('#formContainer').on('click', '#comment', addMessage);
   $('#formContainer').on('click', '#signOut', handleSignOut);
+  firebase.auth().onAuthStateChanged(handleAuthStateChange);
+
+  $('#formContainer').on('click', '#comment', addMessage);
   $('#chatLog').on('click', '.upvote', handleUpvote);
   $('#chatLog').on('click', '.delete', handleDelete);
 }
@@ -112,14 +114,14 @@ function handleUpvote() {
   var updates = {
     upvotes: newUpvotes
   };
-  firebase.database().ref('messages/' + messageId).update(updates);
+  firebase.database().ref('messages').child(messageId).update(updates);
 }
 
 // Delete
 
 function handleDelete() {
   var messageId = $(this).parent().attr('data-id');
-  firebase.database().ref('messages/' + messageId).remove();
+  firebase.database().ref('messages').child(messageId).remove();
 }
 
 $(document).ready(setup);

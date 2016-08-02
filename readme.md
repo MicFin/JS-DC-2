@@ -169,6 +169,15 @@ C. [Class Pass](./assets/class-pass.png) printed out or on your phone
 
 - [Slides](http://ga-students.github.io/JS-DC-2/13-lab/)
 - [Video](http://www.youtube.com/watch?v=xnobeMNl2Pc)
+- [Assignment](https://github.com/jacobdfriedmann/feedr)
+
+--
+
+### Class 14: Firebase
+
+- [Slides](http://ga-students.github.io/JS-DC-2/14-firebase/)
+- [Video](http://www.youtube.com/watch?v=1SSxdeSvs7c)
+- [Bonus](14-firebase/bonus/readme.md)
 
 
 ---
