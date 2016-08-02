@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JS Chat</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>JS Chat</h1>
+      <form id="registerForm">
+        <input name="email" type="email" />
+        <input name="password" type="password" />
+        <input type="submit" value="Submit" />
+      </form>
+
+      <form id="loginForm">
+        <input name="email" type="email" />
+        <input name="password" type="password" />
+        <input type="submit" value="Submit" />
+      </form>
+
+      <form id="commentForm">
+        <textarea name="message">
+        </textarea>
+        <input type="submit" value="Submit" />
+      </form>
+
+      <div id="chat-log">
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js" integrity="sha256-JmvOoLtYsmqlsWxa7mDSLMwa6dZ9rrIdtrrVYRnDRH0="   crossorigin="anonymous"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyB0hjppxmddBJNWr-jsfleU2W-obbeRwoE",
+        authDomain: "js-chat-f59bc.firebaseapp.com",
+        databaseURL: "https://js-chat-f59bc.firebaseio.com",
+        storageBucket: "",
+      };
+      firebase.initializeApp(config);
+    </script>
+  	<script type="text/javascript" src="js/index.js"></script>
+    <script id="chat-template" type="text/x-handlebars-template">
+      {{#each messages}}
+        <h3>{{title}}</h2>
+        <h4>{{author}}</h4>
+        <p>{{text}}</p>
+      {{/each}}
+    </script>
+  </body>
+</html>
