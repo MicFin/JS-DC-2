@@ -179,6 +179,22 @@ C. [Class Pass](./assets/class-pass.png) printed out or on your phone
 - [Video](http://www.youtube.com/watch?v=1SSxdeSvs7c)
 - [Bonus](14-firebase/bonus/readme.md)
 
+--
+
+### Class 15: Firebase and Intro to OOP
+
+- [Slides](http://ga-students.github.io/JS-DC-2/15-firebase-and-intro-to-oop/)
+- [Video](http://www.youtube.com/watch?v=lLBUJgdgTKs)
+- [Bonus (firebase)](14-firebase/bonus/readme.md)
+- [Bonus (OOP)](15-firebase-and-intro-to-oop/bonus/readme.md)
+
+--
+
+### Class 16: Object Oriented JS
+
+- [Slides](http://ga-students.github.io/JS-DC-2/16-object-oriented-js)
+- [Video](http://www.youtube.com/watch?v=0xlTFw3fGpw)
+- [Bonus](16-object-oriented-js/bonus/readme.md)
 
 ---
 
