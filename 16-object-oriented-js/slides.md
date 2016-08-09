@@ -3,7 +3,10 @@
 
 ### Objectives
 
+- Describe the components of Object Oriented Programming
 - Implement the concepts of Object Oriented Programming in JavaScript
+- Predict what `this` is in different contexts
+- Use closures to protect interaction with variables
 
 --
 
@@ -11,12 +14,29 @@
 
 | Timing | Topic |
 | --- | --- |
-| 30 min | Lab Review |
-| 110 min | Firebase Codealong |
-| 30 min | Intro to Object Oriented Programming |
+| 30 min | Intro to OOP |
+| 60 min | OOP in JS |
+| 30 min | All about `this` |
+| 20 min | Closures |
 | 10 min | Final Questions & Exit Tickets |
 
 ---
+
+## Intro to Object Oriented Programming (OOP)
+
+We'll start by talking about OOP as a programming paradigm that isn't JS specific. We'll then see how we can use OOP in JS programs.
+
+--
+
+### What is OOP?
+
+A programming strategy that focuses on Objects being the fundamental building blocks of a program instead of functions.
+
+Note:
+
+Just as much a mental model as a programming model.
+
+--
 
 ### Class
 
@@ -173,6 +193,10 @@ var constructedObject = new Object();
 var constructedArray = new Array();
 ```
 
+Note:
+
+How have we gotten this far without ever using a constructor. Well, we haven't...
+
 --
 
 ### "Plain" Objects
@@ -200,6 +224,14 @@ console.log(myObj instanceof Person);
 console.log(jacob instanceof Person);
 // true
 ```
+
+--
+
+### Exercise: `instanceof`
+
+Note:
+
+if we know what class of Object something is, we also know what properties it will have.
 
 --
 
@@ -552,6 +584,19 @@ function Animal(name, sound) {
 Animal.prototype.makeSound = function() {
   console.log(this.sound + '!');
 }
+var lion = Animal('lion', 'rawr');
+```
+
+--
+
+```js
+function Animal(name, sound) {
+  this.name = name;
+  this.sound = sound;
+}
+Animal.prototype.makeSound = function() {
+  console.log(this.sound + '!');
+}
 var lion = new Animal('lion', 'rawr');
 
 $.get('/animals', lion.makeSound);
@@ -577,23 +622,84 @@ doSomethingAsync(this.myFunc);
 
 Functions remember the scope in which they were created.
 
+--
+
+### Closures
+
 ```js
-function makeClosure() {
+function closureExample() {
   var name = 'Jacob';
 
-  function getName() {
-    return name;
+  function logName() {
+    console.log(name);
   }
 
-  return getName;
+  logName();
 }
-var enclosedFunction = makeClosure();
-console.log(enclosedFunction());
+closureExample();
 ```
+
+Note:
+
+We already know why and how this works, the `logName` function has access to the `name` variable because they are in the same local scope.
 
 --
 
-## Closure code along
+### Closures
+
+```js
+function closureExample() {
+  var name = 'Jacob';
+
+  function logName() {
+    console.log(name);
+  }
+}
+closureExample();
+// ?
+logName();
+// ?
+console.log(name);
+// ?
+```
+
+Note:
+This will not work. Both `logName` and `name` do not exist outside of the closureExample function and thus will throw errors.
+
+
+--
+
+### Closures
+
+```js
+function closureExample() {
+  var name = 'Jacob';
+
+  return function () {
+    console.log(name);
+  }
+}
+
+var logName = closureExample();
+
+logName();
+// ?
+console.log(name);
+// ?
+```
+
+Note:
+Here, we can call the `logName` function since we return it from closureExample. However, we can't access the name variable since it is closed in the local scope.
+
+--
+
+### Closures
+
+Closures can be used for, among other things, restricting the access to data.
+
+--
+
+### Closures Exercise
 
 --
 

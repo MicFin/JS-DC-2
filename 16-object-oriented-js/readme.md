@@ -3,7 +3,10 @@
 
 ### Objectives
 
+- Describe the components of Object Oriented Programming
 - Implement the concepts of Object Oriented Programming in JavaScript
+- Predict what `this` is in different contexts
+- Use closures to protect interaction with variables
 
 --
 
@@ -539,7 +542,8 @@ Animal.prototype.makeSound = function() {
   console.log(this.sound + '!');
 }
 var lion = new Animal('lion', 'rawr');
-lion.makeSound();
+var lionMakeSound = lion.makeSound;
+lionMakeSound();
 ```
 
 --
@@ -577,25 +581,86 @@ doSomethingAsync(this.myFunc);
 
 Functions remember the scope in which they were created.
 
+--
+
+### Closures
+
 ```js
-function makeClosure() {
+function closureExample() {
   var name = 'Jacob';
 
-  function getName() {
-    return name;
+  function logName() {
+    console.log(name);
   }
 
-  return getName;
+  logName();
 }
-var enclosedFunction = makeClosure();
-console.log(enclosedFunction());
+closureExample();
 ```
 
+Note:
+
+We already know why and how this works, the `logName` function has access to the `name` variable because they are in the same local scope.
+
 --
 
-## Closure code along
+### Closures
+
+```js
+function closureExample() {
+  var name = 'Jacob';
+
+  function logName() {
+    console.log(name);
+  }
+}
+closureExample();
+// ?
+logName();
+// ?
+console.log(name);
+// ?
+```
+
+Note:
+This will not work. Both `logName` and `name` do not exist outside of the closureExample function and thus will throw errors.
+
 
 --
+
+### Closures
+
+```js
+function closureExample() {
+  var name = 'Jacob';
+
+  return function () {
+    console.log(name);
+  }
+}
+
+var logName = closureExample();
+
+logName();
+// ?
+console.log(name);
+// ?
+```
+
+Note:
+Here, we can call the `logName` function since we return it from closureExample. However, we can't access the name variable since it is closed in the local scope.
+
+--
+
+### Closures
+
+Closures can be used for, among other things, restricting the access to data.
+
+--
+
+## Closures Exercise
+
+---
 
 ## [Exit Ticket! (Class 17)](http://goo.gl/forms/KzVZ9fuo2YYw5WIB3)
 

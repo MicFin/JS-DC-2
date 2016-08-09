@@ -194,8 +194,24 @@ C. [Class Pass](./assets/class-pass.png) printed out or on your phone
 
 - [Slides](http://ga-students.github.io/JS-DC-2/16-object-oriented-js)
 - [Video](http://www.youtube.com/watch?v=0xlTFw3fGpw)
-- [Bonus](16-object-oriented-js/bonus/readme.md)
+- [Bonus](15-firebase-and-intro-to-oop/bonus/readme.md)
 
----
+--
 
-## FAQ
+### Class 17: OOP and Review
+
+- [Slides](http://ga-students.github.io/JS-DC-2/17-oop-and-review)
+- [Video]()
+
+--
+
+### Class 18: Lab
+
+- [Slides](http://ga-students.github.io/JS-DC-2/18-lab)
+
+--
+
+### Class 19: Presentations
+
+- [Slides](http://ga-students.github.io/JS-DC-2/19-presentations)
+- [Video]()
