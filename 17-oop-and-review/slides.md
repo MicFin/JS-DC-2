@@ -77,6 +77,8 @@ Now functions like `getSuit` can access the arrays, but they are not accessible 
 
 5. Now, explain that the goal of the exercise is to convert each of the three `make` functions into proper classes and then make the model an instance of the Game class instead of a plain object. Check in periodically to ensure people are making progress; use judgment to determine whether parts need to be done together.
 
+6. As an extension (once the first objective is complete), challenge students to try to use closures for one of the new classes in order to protect the property variable. (There is a solution provided that has the result of this as well)
+
 ---
 
 ## Review
@@ -279,7 +281,9 @@ They can be:
 --
 
 #### Exercise: Functions
-TODO
+
+Note:
+Number 5-8
 
 --
 
@@ -329,7 +333,9 @@ We need to use delegated event listeners when elements are being added dynamical
 --
 
 #### Exercise: Events
-TODO
+
+Note:
+Number 9-10
 
 --
 

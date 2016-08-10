@@ -33,10 +33,10 @@ function makeDeck() {
     cards: cards,
     shuffle: function() {
       for (var i = this.cards.length - 1; i > 0; i -= 1) {
-        var j = Math.floor(Math.random() * (i + 1))
-        var temp = this.cards[i]
-        this.cards[i] = this.cards[j]
-        this.cards[j] = temp
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = this.cards[i];
+        this.cards[i] = this.cards[j];
+        this.cards[j] = temp;
       }
     },
     drawCard: function() {
