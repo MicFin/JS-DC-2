@@ -1,0 +1,18 @@
+body {
+  background-color: green;
+  color: white;
+}
+img {
+  width: 100px;
+}
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+  text-align: center;
+}
+.card {
+  height: 190px
+}
+button {
+  color: black;
+}
