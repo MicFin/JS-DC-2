@@ -214,4 +214,3 @@ C. [Class Pass](./assets/class-pass.png) printed out or on your phone
 ### Class 19: Presentations
 
 - [Slides](http://ga-students.github.io/JS-DC-2/19-presentations)
-- [Video]()

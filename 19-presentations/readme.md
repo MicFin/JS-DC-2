@@ -13,7 +13,11 @@
 
 ---
 
-## What to look at next?
+## Presentations!
+
+---
+
+## WhatsNext.js
 
 --
 
@@ -181,10 +185,6 @@ We can create "test suites" to verify that changes to our code don't change the 
 
 --
 
-### Admit what you don't know
-
----
-
 ## Don't be afraid to be green
 
 --
@@ -193,12 +193,8 @@ We can create "test suites" to verify that changes to our code don't change the 
 
 ---
 
-## Presentations!
-
----
-
 ## [Exit Ticket! (Class 20)](http://goo.gl/forms/KzVZ9fuo2YYw5WIB3)
 
 ---
 
-# Goodnight :-)
+# THANK YOU!
