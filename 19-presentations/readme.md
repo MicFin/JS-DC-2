@@ -7,8 +7,8 @@
 
 | Timing | Topic |
 | --- | --- |
-| 30 min | What to look at next? |
 | ? min | Presentations |
+| ? | What to look at next? / Parting Words |
 | 10 min | Final Questions & Exit Tickets |
 
 ---
@@ -31,8 +31,8 @@ Goals:
 
 #### Front-End Frameworks
 
-- React
-- Angular
+- [React](http://reactfordesigners.com/labs/reactjs-introduction-for-people-who-know-just-enough-jquery-to-get-by/)
+- [Angular](http://www.ng-newsletter.com/posts/angular-for-the-jquery-developer.html)
 
 --
 
@@ -50,11 +50,16 @@ Use Node to create "endpoints" that your front-end applications can interact wit
 
 The dominant framework for creating node servers.
 
+- [Tutorial](https://howtonode.org/getting-started-with-express)
+- [Example Projects](https://github.com/expressjs/express/tree/master/examples)
+
 --
 
 #### MongoDB
 
 A "noSQL" (document) database that is used in many node/express applications.
+
+- [Tutorial](https://howtonode.org/express-mongodb)
 
 --
 
@@ -64,6 +69,8 @@ A "noSQL" (document) database that is used in many node/express applications.
 - Express (Back-end Framework)
 - Angular (Front-end Framework)
 - Node
+
+- [Resources](https://github.com/ericdouglas/MEAN-Learning)
 
 --
 
@@ -75,6 +82,8 @@ A "noSQL" (document) database that is used in many node/express applications.
 
 Just like NPM can be used for node back-end dependencies, it can be used for front-end dependencies as well.
 
+- [How?](http://wesbos.com/javascript-modules/)
+
 --
 
 #### Packaging Big Front-End Applications
@@ -85,8 +94,8 @@ When our applications start getting big, we need to split them into separate fil
 
 #### Packaging Tools
 
-- bower
-- webpack
+- [bower](http://zellwk.com/blog/bower/)
+- [webpack](https://egghead.io/lessons/javascript-intro-to-webpack)
 
 --
 
@@ -97,6 +106,8 @@ When our applications start getting big, we need to split them into separate fil
 #### ES6
 
 ES6 introduces some new syntax that is starting to make its way into tutorials, etc
+
+- [Intro to Features](https://medium.com/sons-of-javascript/javascript-an-introduction-to-es6-1819d0d89a0f#.pfghix3yf)
 
 --
 
@@ -127,6 +138,8 @@ var myES6ArrowFunction = (hello) => {
 
 These methods are used to alter `this` among other things.
 
+- [Explanation](http://javascriptissexy.com/javascript-apply-call-and-bind-methods-are-essential-for-javascript-professionals/)
+
 --
 
 ### Testing JavaScript
@@ -137,12 +150,18 @@ These methods are used to alter `this` among other things.
 
 We can create "test suites" to verify that changes to our code don't change the assumed behavior.
 
+- [About JS Testing](https://www.sitepoint.com/javascript-testing-unit-functional-integration/)
+
 --
 
 #### Testing Frameworks
 
-- Mocha
-- Jasmine
+- [Mocha](https://mochajs.org/)
+- [Jasmine](http://jasmine.github.io/2.0/introduction.html)
+
+--
+
+### Qs?
 
 ---
 
